@@ -142,6 +142,14 @@ public class FolwerDeliveryBoxServiceImpl implements IFolwerDeliveryBoxService {
      * @param isValid 是否进行有效性校验
      * @return 是否删除成功
      */
+    /**
+     * Phase 1 cross-domain touchpoint.
+     * 调用 Product 领域服务校验物流箱型是否被 SKU 绑定，避免删除仍被商品使用的箱型。
+     *
+     * 调用领域：Product
+     * 注意：当前仅作为 Phase 1 关注点标记，暂不调整具体实现。
+     */
+    // TODO [Phase1] Order → Product 跨领域依赖，后续按 MEILI-CENTER 设计文档梳理边界。
     @Override
     public R<List<FolwerSkuVo>> deleteWithValidByIds(Collection<Long> ids, Boolean isValid) {
         if(isValid){

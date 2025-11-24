@@ -1,3 +1,4 @@
+<<<<<<< ours
 # Phase 1 整理清单
 
 ## 1. Phase 1 要求摘要
@@ -25,3 +26,9 @@
 - [ ] 根据设计文档指示，明确各中心（如 Order、Payment、Member 等）的处理顺序与范围，并在此文档更新。
 - [ ] 对照领域映射清单，梳理 Phase 1 涉及的 Controller/Service/Domain/Mapper 清单，确保记录完整性。
 - [ ] 针对已标记的跨领域依赖，按设计文档要求确定 Phase 1 需要关注或隔离的项，更新关注点与处理计划。
+=======
+# Phase 1 Tasks
+
+## Phase 1 Checklist
+- [x] 梳理并文档化已知 Order→Member / Order→Product / Payment→Order 的代码级触点（见 CROSS_DOMAIN_TOUCHPOINTS_DETAIL.md，本次任务已完成）
+>>>>>>> theirs

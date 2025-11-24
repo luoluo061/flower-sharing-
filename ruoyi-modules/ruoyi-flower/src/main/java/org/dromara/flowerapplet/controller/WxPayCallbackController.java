@@ -35,6 +35,14 @@ public class WxPayCallbackController {
      * @return
      * @throws Exception
      */
+    /**
+     * Phase 1 cross-domain touchpoint.
+     * 支付回调后调用 Order 领域订单服务完成支付确认与订单状态更新。
+     *
+     * 调用领域：Order
+     * 注意：当前仅作为 Phase 1 关注点标记，暂不调整具体实现。
+     */
+    // TODO [Phase1] Payment → Order 跨领域依赖，后续按 MEILI-CENTER 设计文档梳理边界。
     @SaIgnore
     @PostMapping("/pay/payCallback")
     public R<FolwerAppletOrderVo> callBack(HttpServletRequest request, HttpServletResponse response) throws Exception {

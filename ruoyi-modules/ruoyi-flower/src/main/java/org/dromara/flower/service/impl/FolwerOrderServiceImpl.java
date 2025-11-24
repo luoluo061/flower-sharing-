@@ -61,6 +61,14 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
      * @param orderId 主键
      * @return 订单
      */
+    /**
+     * Phase 1 cross-domain touchpoint.
+     * 调用 Member 领域服务补充订单视图所需的基础会员资料。
+     *
+     * 调用领域：Member
+     * 注意：当前仅作为 Phase 1 关注点标记，暂不调整具体实现。
+     */
+    // TODO [Phase1] Order → Member 跨领域依赖，后续按 MEILI-CENTER 设计文档梳理边界。
     @Override
     public FolwerOrderVo queryById(Long orderId){
         FolwerOrderVo folwerOrderVo = baseMapper.selectVoById(orderId);
@@ -99,6 +107,14 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
      * @param pageQuery 分页参数
      * @return 订单分页列表
      */
+    /**
+     * Phase 1 cross-domain touchpoint.
+     * 调用 Member 领域服务补充订单分页结果中的会员等级与基础资料。
+     *
+     * 调用领域：Member
+     * 注意：当前仅作为 Phase 1 关注点标记，暂不调整具体实现。
+     */
+    // TODO [Phase1] Order → Member 跨领域依赖，后续按 MEILI-CENTER 设计文档梳理边界。
     @Override
     public TableDataInfo<FolwerOrderVo> queryPageList(FolwerOrderBo bo, PageQuery pageQuery) {
         LambdaQueryWrapper<FolwerOrder> lqw = buildQueryWrapper(bo);
