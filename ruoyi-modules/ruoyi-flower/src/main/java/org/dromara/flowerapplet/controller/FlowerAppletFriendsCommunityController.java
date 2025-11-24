@@ -32,6 +32,7 @@ import org.dromara.flowerapplet.service.IFlowerAppletFriendsCommunityService;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/applet/flower/friendsCommunity")
+// [MEILI-DOMAIN]: Community
 public class FlowerAppletFriendsCommunityController extends BaseController {
 
     private final IFlowerAppletFriendsCommunityService flowerAppletFriendsCommunityService;

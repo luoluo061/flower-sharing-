@@ -34,6 +34,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/manager")
+// [MEILI-DOMAIN]: Edu
 public class CoursesAppletManagerController extends BaseController {
 
     private final ICoursesAppletManagerService coursesManagerService;

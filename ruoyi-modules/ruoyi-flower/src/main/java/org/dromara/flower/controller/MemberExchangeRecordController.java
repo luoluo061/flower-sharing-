@@ -33,6 +33,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/exchangeRecord")
+// [MEILI-DOMAIN]: Member
 public class MemberExchangeRecordController extends BaseController {
 
     private final IMemberExchangeRecordService memberExchangeRecordService;

@@ -37,6 +37,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/purchaseRecord")
+// [MEILI-DOMAIN]: Member
 public class MemberAppletPurchaseRecordController extends BaseController {
 
     private final IMemberAppletPurchaseRecordService memberPurchaseRecordService;

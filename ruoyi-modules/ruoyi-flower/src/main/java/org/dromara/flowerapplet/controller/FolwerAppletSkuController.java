@@ -36,6 +36,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerapplet/sku")
+// [MEILI-DOMAIN]: Product
 public class FolwerAppletSkuController extends BaseController {
 
     private final IFolwerAppletSkuService folwerAppletSkuService;

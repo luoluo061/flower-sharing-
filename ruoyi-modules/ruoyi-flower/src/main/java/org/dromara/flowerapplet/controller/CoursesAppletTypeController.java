@@ -36,6 +36,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/type")
+// [MEILI-DOMAIN]: Edu
 public class CoursesAppletTypeController extends BaseController {
 
     private final ICoursesAppletTypeService coursesTypeService;

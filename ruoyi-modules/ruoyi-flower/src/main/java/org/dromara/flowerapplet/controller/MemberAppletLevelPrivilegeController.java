@@ -34,6 +34,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/levelPrivilege")
+// [MEILI-DOMAIN]: Member
 public class MemberAppletLevelPrivilegeController extends BaseController {
 
     private final IMemberAppletLevelPrivilegeService memberLevelPrivilegeService;

@@ -32,6 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/logisticsExpress")
+// [MEILI-DOMAIN]: Marketing
 public class MarketingLogisticsExpressController extends BaseController {
 
     private final IMarketingLogisticsExpressService marketingLogisticsExpressService;

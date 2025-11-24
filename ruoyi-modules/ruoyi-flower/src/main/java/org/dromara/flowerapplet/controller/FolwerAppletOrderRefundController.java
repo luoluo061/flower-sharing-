@@ -32,6 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerapplet/orderRefund")
+// [MEILI-DOMAIN]: Order
 public class FolwerAppletOrderRefundController extends BaseController {
 
     private final IFolwerAppletOrderRefundService folwerAppletOrderRefundService;

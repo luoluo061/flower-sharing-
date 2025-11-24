@@ -32,6 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerapplet/creditSet")
+// [MEILI-DOMAIN]: Product
 public class FolwerAppletCreditSetController extends BaseController {
 
     private final IFolwerAppletCreditSetService folwerAppletCreditSetService;

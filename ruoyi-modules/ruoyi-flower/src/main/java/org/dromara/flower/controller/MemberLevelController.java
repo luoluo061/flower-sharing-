@@ -35,6 +35,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/level")
+// [MEILI-DOMAIN]: Member
 public class MemberLevelController extends BaseController {
 
     private final IMemberLevelService memberLevelService;

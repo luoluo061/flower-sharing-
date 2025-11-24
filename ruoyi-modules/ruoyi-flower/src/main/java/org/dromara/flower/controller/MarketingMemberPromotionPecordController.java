@@ -34,6 +34,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/memberPromotionPecord")
+// [MEILI-DOMAIN]: Member
 public class MarketingMemberPromotionPecordController extends BaseController {
 
     private final IMarketingMemberPromotionPecordService marketingMemberPromotionPecordService;

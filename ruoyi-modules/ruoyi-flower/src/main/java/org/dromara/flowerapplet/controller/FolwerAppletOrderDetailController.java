@@ -32,6 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerapplet/orderDetail")
+// [MEILI-DOMAIN]: Order
 public class FolwerAppletOrderDetailController extends BaseController {
 
     private final IFolwerAppletOrderDetailService folwerAppletOrderDetailService;

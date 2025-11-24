@@ -32,6 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/managerVideo")
+// [MEILI-DOMAIN]: Edu
 public class CoursesManagerVideoController extends BaseController {
 
     private final ICoursesManagerVideoService coursesManagerVideoService;
