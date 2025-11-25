@@ -116,3 +116,4 @@
 ## 4. 视图装配与辅助组件
 
 - OrderViewAssembler — 订单视图装配器，聚焦订单视图对象与会员/用户/地址等扩展信息的字段映射，位于 `org.dromara.flower.domain.order.assembler`。
+- OrderViewAssembler 现同时负责订单详情视图与列表/分页视图的装配。

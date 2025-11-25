@@ -35,6 +35,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 import java.util.Collection;
+import java.util.HashMap;
 
 // [MEILI-DOMAIN]: Order
 /**
@@ -122,12 +123,15 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
     public TableDataInfo<FolwerOrderVo> queryPageList(FolwerOrderBo bo, PageQuery pageQuery) {
         LambdaQueryWrapper<FolwerOrder> lqw = buildQueryWrapper(bo);
         Page<FolwerOrderVo> result = baseMapper.selectVoPage(pageQuery.build(), lqw);
+        Map<Long, MemberLevelVo> memberLevelMap = new HashMap<>();
+        Map<Long, AppletUserInformationVo> appletUserInformationMap = new HashMap<>();
+        Map<Long, FolwerPickAddrVo> folwerPickAddrMap = new HashMap<>();
         result.getRecords().forEach(folwerOrderVo -> {
-            MemberLevelVo memberLevelVo = memberLevelService.queryById(folwerOrderVo.getMemberLevelId());
-            AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(folwerOrderVo.getUserId());
-            FolwerPickAddrVo folwerPickAddrVo = folwerPickAddrService.queryById(folwerOrderVo.getAddrOrderId());
-            orderViewAssembler.buildOrderVo(folwerOrderVo, appletUserInformationVo, memberLevelVo, folwerPickAddrVo);
+            memberLevelMap.put(folwerOrderVo.getMemberLevelId(), memberLevelService.queryById(folwerOrderVo.getMemberLevelId()));
+            appletUserInformationMap.put(folwerOrderVo.getUserId(), appletUserInformationService.queryById(folwerOrderVo.getUserId()));
+            folwerPickAddrMap.put(folwerOrderVo.getAddrOrderId(), folwerPickAddrService.queryById(folwerOrderVo.getAddrOrderId()));
         });
+        orderViewAssembler.buildOrderVoList(result.getRecords(), appletUserInformationMap, memberLevelMap, folwerPickAddrMap);
         return TableDataInfo.build(result);
     }
 
