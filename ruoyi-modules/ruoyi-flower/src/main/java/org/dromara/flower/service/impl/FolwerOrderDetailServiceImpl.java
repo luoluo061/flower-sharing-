@@ -65,6 +65,7 @@ public class FolwerOrderDetailServiceImpl implements IFolwerOrderDetailService {
         LambdaQueryWrapper<FolwerOrderDetail> lqw = buildQueryWrapper(bo);
         Page<FolwerOrderDetailVo> result = baseMapper.selectVoPage(pageQuery.build(), lqw);
         result.getRecords().forEach(folwerOrderDetailVo -> {
+            // [Phase1 cross-domain] Order → Product（查询 SKU 基础信息）
             FolwerSkuVo folwerSkuVos = folwerSkuService.queryById(folwerOrderDetailVo.getSkuId());
             if (folwerSkuVos != null) {
                 folwerOrderDetailVo.setFolwerSkuVo(folwerSkuVos);

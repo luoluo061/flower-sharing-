@@ -228,6 +228,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         if (bo.getUserId() == null){
             return R.fail("用户ID不能为空");
         }
+        // [Phase1 cross-domain] Order → Member（获取下单用户的基础信息）
         AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(Long.valueOf(bo.getUserId()));
         if (appletUserInformationVo == null){
             return R.fail("用户不存在");
@@ -244,6 +245,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         List<FolwerAppletOrderDetailBo> folwerAppletOrderDetailBos = new ArrayList<>();
         //立即购买
         if(bo.getProductItem() != null){
+            // [Phase1 cross-domain] Order → Product（查询商品信息）
             FolwerAppletProductVo folwerAppletProductVo = productService.queryById(Long.valueOf(bo.getProductItem()));
             if (folwerAppletProductVo == null){
                 return R.fail("商品不存在");
@@ -257,6 +259,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
             //订单详情
             FolwerAppletOrderDetailBo folwerAppletOrderDetailBo = new FolwerAppletOrderDetailBo();
 
+            // [Phase1 cross-domain] Order → Product（校验并读取 SKU 信息）
             FolwerAppletSkuVo folwerAppletSkuVo = folwerAppletSkuService.selsctById(Long.valueOf(bo.getSkuId()));
             total = folwerAppletSkuVo.getPrice().multiply(BigDecimal.valueOf(bo.getProdCount()));
             folwerAppletOrderDetailBo.setOrderPrice(folwerAppletSkuVo.getPrice());
@@ -284,6 +287,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                     return R.fail("购物车状态为下架");
                 }
 
+                // [Phase1 cross-domain] Order → Product（查询购物车对应商品信息）
                 FolwerAppletProductVo productVo = productService.queryById(basketVo.getProdId());
                 if (productVo == null){
                     return R.fail("商品不存在");
@@ -291,6 +295,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                 //订单详情
                 FolwerAppletOrderDetailBo folwerAppletOrderDetailBo = new FolwerAppletOrderDetailBo();
 
+                // [Phase1 cross-domain] Order → Product（校验并读取 SKU 信息）
                 FolwerAppletSkuVo folwerAppletSkuVo = folwerAppletSkuService.selsctById(Long.valueOf(basketVo.getSkuId()));
                 BigDecimal price = folwerAppletSkuVo.getPrice().multiply(BigDecimal.valueOf(basketVo.getBasketCount()));
                 total = total.add(price);
@@ -440,6 +445,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
 //            throw new Exception("用户ID不能为空");
             return R.fail("用户ID不能为空");
         }
+        // [Phase1 cross-domain] Order → Member（获取下单用户的基础信息）
         AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(Long.valueOf(bo.getUserId()));
         if (appletUserInformationVo == null){
 //            throw new Exception("用户不存在");
@@ -466,6 +472,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         List<FolwerAppletOrderDetailBo> folwerAppletOrderDetailBos = new ArrayList<>();
         //立即购买
         if(bo.getProductItem() != null){
+            // [Phase1 cross-domain] Order → Product（查询商品信息）
             FolwerAppletProductVo folwerAppletProductVo = productService.queryById(Long.valueOf(bo.getProductItem()));
             if (folwerAppletProductVo == null){
 //                throw new Exception("商品不存在");
@@ -491,6 +498,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
 //                folwerAppletOrderDetailBo.setOrderPrice(folwerAppletSkuVo.getPrice());
 //            }
 //            total = Arith.mul(folwerAppletProductVo.getOriPrice() ,bo.getProdCount());
+            // [Phase1 cross-domain] Order → Product（校验并读取 SKU 信息）
             FolwerAppletSkuVo folwerAppletSkuVo = folwerAppletSkuService.queryById(Long.valueOf(bo.getSkuId()));
             total = folwerAppletSkuVo.getPrice().multiply(BigDecimal.valueOf(bo.getProdCount()));
             folwerAppletOrderDetailBo.setOrderPrice(folwerAppletSkuVo.getPrice());
@@ -537,6 +545,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                     return R.fail("购物车状态为下架");
                 }
 
+                // [Phase1 cross-domain] Order → Product（查询购物车对应商品信息）
                 FolwerAppletProductVo productVo = productService.queryById(basketVo.getProdId());
                 if (productVo == null){
 //                    throw new Exception("商品不存在");
@@ -556,6 +565,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
 //                    folwerAppletOrderDetailBo.setOrderPrice(folwerAppletSkuVo.getPrice());
 //                }
 
+                // [Phase1 cross-domain] Order → Product（校验并读取 SKU 信息）
                 FolwerAppletSkuVo folwerAppletSkuVo = folwerAppletSkuService.queryById(Long.valueOf(basketVo.getSkuId()));
                 BigDecimal price = folwerAppletSkuVo.getPrice().multiply(BigDecimal.valueOf(basketVo.getBasketCount()));
                 total = total.add(price);
@@ -842,6 +852,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
             return R.fail("订单不存在");
         }
 
+        // [Phase1 cross-domain] Order → Member（获取支付用户的开放平台信息）
         AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(folwerAppletOrderVo.getUserId());
         if (appletUserInformationVo == null){
             return R.fail("用户不存在");
@@ -861,6 +872,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         if (folwerAppletOrderVo.getIsProfitSharing() == 1){
             payJSAPIParam.setProfitSharing(folwerAppletOrderVo.getIsProfitSharing() == 1?true:false);
         }
+        // [Phase1 cross-domain] Order → Payment（构建并发起微信 JSAPI 支付）
         WxJsapiResponse wxJsapiResponse = payService.JsapiOrder(payJSAPIParam);
         if (wxJsapiResponse == null){
             return R.fail("支付失败");
@@ -870,6 +882,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         folwerAppletOrderDetailBo.setOrderId(payParam.getOrderNumbers());
         List<FolwerAppletOrderDetailVo> folwerAppletOrderDetailVos = folwerAppletOrderDetailService.queryList(folwerAppletOrderDetailBo);
         for (FolwerAppletOrderDetailVo folwerAppletOrderDetailVo : folwerAppletOrderDetailVos) {
+            // [Phase1 cross-domain] Order → Product（扣减支付成功后的 SKU 库存）
             FolwerAppletSkuVo folwerAppletSkuVo = folwerAppletSkuService.queryById(folwerAppletOrderDetailVo.getSkuId());
             if(folwerAppletSkuVo.getActualStocks() != null){
                 FolwerAppletSkuBo folwerAppletSkuBo = new FolwerAppletSkuBo();
@@ -883,6 +896,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
 
     @Override
     public R<String> refundOrder(WxRefundRequest wxRefundRequest) throws Exception {
+        // [Phase1 cross-domain] Order → Payment（提交退款请求）
         Refund refund = payService.refundOrder(wxRefundRequest);
 //                log.info("请求退款返回：" + refund);
         //接收退款返回参数
@@ -913,6 +927,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         if (orderId.isEmpty()){
             return null;
         }
+        // [Phase1 cross-domain] Order → Payment（查询支付交易状态）
         Transaction transaction = payService.transactionsOrder(orderId);
         if (transaction == null){
             return null;
@@ -928,6 +943,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                 SimpleDateFormat simpleDateFormat = new  SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
                 folwerAppletOrderBo.setPayTime(simpleDateFormat.parse(transaction.getSuccessTime()));
                 folwerAppletOrderBo.setPayCallback(transaction.toString());
+                // [Phase1 cross-domain] Order → Member（获取支付用户的基础信息）
                 AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(Long.valueOf(folwerAppletOrderVo.getUserId()));
                 //进行分账
                 if(folwerAppletOrderVo.getIsProfitSharing() == 1L){
@@ -937,6 +953,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                     }
                     if(appletUserInformationVo.getParentId() != 0L && appletUserInformationVo.getParentId() != null){
                         AppletUserInformationVo informationParentVo = appletUserInformationService.queryById(appletUserInformationVo.getParentId());
+                        // [Phase1 cross-domain] Order → Payment（添加分账接收方）
                         AddReceiverResponse addReceiverResponse = sharingService.addReceiver("PERSONAL_OPENID", informationParentVo.getOpenid(), "USER");
                         if (addReceiverResponse.getAccount() != null){
                             PayProfitsharingParam profitSharingParam = new PayProfitsharingParam();
@@ -948,6 +965,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                             profitSharingParam.setAmount((long) mul);
                             profitSharingParam.setDescription("分账");
 
+                            // [Phase1 cross-domain] Order → Payment（执行微信分账操作）
                             OrdersEntity ordersEntity = sharingService.ordersSharing(profitSharingParam, "0");
                             if (ordersEntity.getState().equals("FINISHED")){
                                 //分账成功
@@ -966,6 +984,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
 
                     //修改库存和销量
                     for (FolwerAppletOrderDetailVo folwerAppletOrderDetailVo : folwerAppletOrderVo.getOrderDetails()){
+                        // [Phase1 cross-domain] Order → Product（更新商品销量及库存数据）
                         FolwerAppletProductVo folwerAppletProductVo = folwerAppletProductService.queryById(folwerAppletOrderDetailVo.getProductId());
                         FolwerAppletProductBo folwerAppletProductBo = BeanUtil.copyProperties(folwerAppletProductVo, FolwerAppletProductBo.class);
                         folwerAppletProductBo.setTotalStocks((long) Arith.mul(folwerAppletProductVo.getTotalStocks(), folwerAppletOrderDetailVo.getNumber()));
@@ -993,6 +1012,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                 SimpleDateFormat simpleDateFormat = new  SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
                 folwerAppletOrderBo.setPayTime(simpleDateFormat.parse(transaction.getSuccessTime()));
                 folwerAppletOrderBo.setPayCallback(transaction.toString());
+                // [Phase1 cross-domain] Order → Member（获取支付用户的基础信息）
                 AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(Long.valueOf(folwerAppletOrderVo.getUserId()));
                 //进行分账
                 if(folwerAppletOrderVo.getIsProfitSharing() == 1L){
@@ -1002,6 +1022,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                     }
                     if(appletUserInformationVo.getParentId() != 0L && appletUserInformationVo.getParentId() != null){
                         AppletUserInformationVo informationParentVo = appletUserInformationService.queryById(appletUserInformationVo.getParentId());
+                        // [Phase1 cross-domain] Order → Payment（添加分账接收方）
                         AddReceiverResponse addReceiverResponse = sharingService.addReceiver("PERSONAL_OPENID", informationParentVo.getOpenid(), "USER");
                         if (addReceiverResponse.getAccount() != null){
                             PayProfitsharingParam profitSharingParam = new PayProfitsharingParam();
@@ -1013,6 +1034,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                             profitSharingParam.setAmount((long) mul);
                             profitSharingParam.setDescription("分账");
 
+                            // [Phase1 cross-domain] Order → Payment（执行微信分账操作）
                             OrdersEntity ordersEntity = sharingService.ordersSharing(profitSharingParam, "0");
                             if (ordersEntity.getState().equals("FINISHED")){
                                 //分账成功
@@ -1030,6 +1052,7 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
                     appletUserInformationService.updateByBo(appletUserInformationBo);
                     //修改库存和销量
                     for (FolwerAppletOrderDetailVo folwerAppletOrderDetailVo : folwerAppletOrderVo.getOrderDetails()){
+                        // [Phase1 cross-domain] Order → Product（更新商品销量及库存数据）
                         FolwerAppletProductVo folwerAppletProductVo = folwerAppletProductService.queryById(folwerAppletOrderDetailVo.getProductId());
                         FolwerAppletProductBo folwerAppletProductBo = BeanUtil.copyProperties(folwerAppletProductVo, FolwerAppletProductBo.class);
                         folwerAppletProductBo.setTotalStocks((long) Arith.mul(folwerAppletProductVo.getTotalStocks(), folwerAppletOrderDetailVo.getNumber()));
@@ -1054,19 +1077,23 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         MarketingMemberPromotionPecordBo memberPromotionPecordBo = new MarketingMemberPromotionPecordBo();
         memberPromotionPecordBo.setMemberId(userId);
 
+        // [Phase1 cross-domain] Order → Marketing（查询会员推广分佣记录）
         List<MarketingMemberPromotionPecordVo> marketingMemberPromotionPecordVos = marketingMemberPromotionPecordService.queryList(memberPromotionPecordBo);
         if (CollectionUtil.isEmpty(marketingMemberPromotionPecordVos)){
             return null;
         }
 
+        // [Phase1 cross-domain] Order → Member（获取分账接收用户的基础信息）
         AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(Long.valueOf(marketingMemberPromotionPecordVos.get(0).getMemberId()));
 
 
+        // [Phase1 cross-domain] Order → Payment（添加分账接收方）
         AddReceiverResponse openid = sharingService.addReceiver(PERSONAL_OPENID, appletUserInformationVo.getOpenid(), PARTNER);
         if (openid == null){
             return null;
         }
 
+        // [Phase1 cross-domain] Order → Payment（查询分账结果）
         OrdersEntity ordersEntity = sharingService.sharingResult(outOrderNo, transactionId);
         if (ordersEntity == null){
             return null;
@@ -1095,9 +1122,11 @@ public class FolwerAppletOrderServiceImpl implements IFolwerAppletOrderService {
         if (!CollectionUtil.isEmpty(basketIds) && productItemItem == null) {
             for (Long basketId : basketIds){
                 FolwerAppletBasketVo folwerAppletBasketVo = basketService.queryById(basketId);
+                // [Phase1 cross-domain] Order → Product（查询购物车商品信息）
                 shopCartItems.add(productService.queryById(folwerAppletBasketVo.getProdId()));
             }
         }else if (productItemItem != null) {
+            // [Phase1 cross-domain] Order → Product（查询立即购买商品信息）
             shopCartItems.add(productService.queryById(productItemItem));
         }
 

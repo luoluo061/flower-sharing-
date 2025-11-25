@@ -181,11 +181,12 @@ public class FolwerAppletCreditOrderServiceImpl implements IFolwerAppletCreditOr
 //        if (cacheObject != null){
 //            return cacheObject;
 //        }
-
+        // [Phase1 cross-domain] Order → Member（校验兑换用户的基础信息与积分）
         AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(Long.valueOf(bo.getUserId()));
         if (appletUserInformationVo == null){
             throw new Exception("用户不存在");
         }
+        // [Phase1 cross-domain] Order → Marketing（查询积分商品信息）
         FolwerAppletCreditProductVo folwerAppletCreditProductVo = folwerAppletCreditProductService.queryById(Long.valueOf(bo.getProductItem()));
         if (folwerAppletCreditProductVo == null){
             throw new Exception("商品不存在");
@@ -332,6 +333,7 @@ public class FolwerAppletCreditOrderServiceImpl implements IFolwerAppletCreditOr
                     //是否分账
                     payJSAPIParam.setProfitSharing(false);
                     //微信支付暂时没有密钥
+                    // [Phase1 cross-domain] Order → Payment（构建并发起微信 JSAPI 支付）
                     WxJsapiResponse wxJsapiResponse = payService.JsapiOrder(payJSAPIParam);
                     if (wxJsapiResponse == null){
                         R.fail("支付失败");
@@ -346,6 +348,7 @@ public class FolwerAppletCreditOrderServiceImpl implements IFolwerAppletCreditOr
 
     @Override
     public FolwerAppletCreditOrderVo queryCreditOrder(String orderCreditId) throws Exception {
+        // [Phase1 cross-domain] Order → Payment（查询积分订单的支付交易状态）
         Transaction transaction = payService.transactionsOrder(orderCreditId);
         if (transaction == null){
             return null;

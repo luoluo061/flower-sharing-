@@ -29,3 +29,4 @@
 - [x] 完成 Order Center 组件梳理与 MEILI-DOMAIN 注释扩展（见 ORDER_CENTER_COMPONENTS.md，本次任务已完成）
 - [x] 抽取订单视图拼装逻辑到 OrderViewAssembler，收敛 Order 领域的视图装配（Phase 1 Task 4，本次任务已完成）
 - [x] 扩展 OrderViewAssembler，收敛订单列表/分页视图装配逻辑（Phase 1 Task 5 本次完成）
+- [x] 完成 Order Center 剩余跨领域触点的注释标记与清单整理（Phase 1 Task 6 本次完成）

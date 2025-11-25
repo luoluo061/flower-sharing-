@@ -256,6 +256,7 @@ public class FolwerAppletOrderDvyServiceImpl implements IFolwerAppletOrderDvySer
         if (bo.getBasketIds() != null) {
             for (String basketId : bo.getBasketIds()) {
                 FolwerAppletBasketVo folwerAppletBasketVo = folwerBasketService.queryById(Long.parseLong(basketId));
+                // [Phase1 cross-domain] Order → Product（查询 SKU 规格维度，计算物流重量体积）
                 FolwerSkuVo folwerSkuVo = folwerSkuService.queryById(folwerAppletBasketVo.getSkuId());
                 weight = weight + folwerSkuVo.getWeight() * folwerAppletBasketVo.getBasketCount();
                 Double skuSize = Double.parseDouble(folwerSkuVo.getSize());
@@ -266,6 +267,7 @@ public class FolwerAppletOrderDvyServiceImpl implements IFolwerAppletOrderDvySer
             }
         } else {
             if (bo.getSkuId() != null) {
+                // [Phase1 cross-domain] Order → Product（查询 SKU 规格维度，计算物流重量体积）
                 FolwerSkuVo folwerSkuVo = folwerSkuService.queryById(Long.valueOf(bo.getSkuId()));
                 weight = weight + folwerSkuVo.getWeight() * bo.getProdCount();
                 size = Double.valueOf(folwerSkuVo.getSize());

@@ -81,6 +81,7 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
     @Override
     public FolwerOrderVo queryById(Long orderId){
         FolwerOrderVo folwerOrderVo = baseMapper.selectVoById(orderId);
+        // [Phase1 cross-domain] Order → Member（获取下单用户的基础信息）
         AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(folwerOrderVo.getUserId());
         FolwerPickAddrBo folwerPickAddrBo = new FolwerPickAddrBo();
         folwerPickAddrBo.setUserId(String.valueOf(folwerOrderVo.getUserId()));
@@ -127,7 +128,9 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
         Map<Long, AppletUserInformationVo> appletUserInformationMap = new HashMap<>();
         Map<Long, FolwerPickAddrVo> folwerPickAddrMap = new HashMap<>();
         result.getRecords().forEach(folwerOrderVo -> {
+            // [Phase1 cross-domain] Order → Member（获取会员等级信息）
             memberLevelMap.put(folwerOrderVo.getMemberLevelId(), memberLevelService.queryById(folwerOrderVo.getMemberLevelId()));
+            // [Phase1 cross-domain] Order → Member（获取下单用户的基础信息）
             appletUserInformationMap.put(folwerOrderVo.getUserId(), appletUserInformationService.queryById(folwerOrderVo.getUserId()));
             folwerPickAddrMap.put(folwerOrderVo.getAddrOrderId(), folwerPickAddrService.queryById(folwerOrderVo.getAddrOrderId()));
         });

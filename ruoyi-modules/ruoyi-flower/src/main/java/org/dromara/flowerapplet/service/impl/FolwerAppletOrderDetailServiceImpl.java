@@ -49,6 +49,7 @@ public class FolwerAppletOrderDetailServiceImpl implements IFolwerAppletOrderDet
     public FolwerAppletOrderDetailVo queryById(Long id){
         FolwerAppletOrderDetailVo folwerAppletOrderDetailVo = baseMapper.selectVoById(id);
         if(folwerAppletOrderDetailVo.getSkuId() != null){
+            // [Phase1 cross-domain] Order → Product（查询订单行对应的 SKU 信息）
             folwerAppletOrderDetailVo.setSkuName(folwerAppletSkuService.queryById(folwerAppletOrderDetailVo.getSkuId()).getSkuName());
         }
         return folwerAppletOrderDetailVo;
@@ -80,6 +81,7 @@ public class FolwerAppletOrderDetailServiceImpl implements IFolwerAppletOrderDet
         List<FolwerAppletOrderDetailVo> folwerAppletOrderDetailVos = baseMapper.selectVoList(lqw);
         for (FolwerAppletOrderDetailVo folwerAppletOrderDetailVo : folwerAppletOrderDetailVos) {
             if(folwerAppletOrderDetailVo.getSkuId() != null){
+                // [Phase1 cross-domain] Order → Product（查询订单行对应的 SKU 信息）
                 folwerAppletOrderDetailVo.setSkuName(folwerAppletSkuService.selsctById(folwerAppletOrderDetailVo.getSkuId()).getSkuName());
             }
         }

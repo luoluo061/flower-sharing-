@@ -67,6 +67,7 @@ public class FolwerOrderRefundServiceImpl implements IFolwerOrderRefundService {
     public FolwerOrderRefundVo queryById(Long refundId){
         FolwerOrderRefundVo folwerOrderRefundVo = baseMapper.selectVoById(refundId);
         if (folwerOrderRefundVo != null){
+            // [Phase1 cross-domain] Order → Member（查询下单用户的基础信息）
             AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(folwerOrderRefundVo.getUserId());
             if (appletUserInformationVo != null){
                 folwerOrderRefundVo.setUserPhone(appletUserInformationVo.getPhone());
@@ -132,6 +133,7 @@ public class FolwerOrderRefundServiceImpl implements IFolwerOrderRefundService {
                     break;
             }
             FolwerOrderRefundVo folwerOrderRefundVo = this.queryById(refundId);
+            // [Phase1 cross-domain] Order → Member（查询下单用户的基础信息）
             AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(folwerOrderRefundVo.getUserId());
             folwerOrderRefundInfoVo.setUserPhone(appletUserInformationVo.getPhone());
         }
@@ -256,6 +258,7 @@ public class FolwerOrderRefundServiceImpl implements IFolwerOrderRefundService {
         refundAmount.setTotal(folwerOrderRefundInfoVo.getActualTotal());
         refundAmount.setCurrency("CNY");
         wxRefundRequest.setAmount(refundAmount);
+        // [Phase1 cross-domain] Order → Payment（提交退款请求）
         Refund refund = payService.refundOrder(wxRefundRequest);
 //                log.info("请求退款返回：" + refund);
         //接收退款返回参数

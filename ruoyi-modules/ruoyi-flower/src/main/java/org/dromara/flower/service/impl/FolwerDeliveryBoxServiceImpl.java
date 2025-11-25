@@ -167,6 +167,7 @@ public class FolwerDeliveryBoxServiceImpl implements IFolwerDeliveryBoxService {
         FolwerSkuBo bo = new FolwerSkuBo();
         bo.setBoxId(boxId);
         bo.setStatus(1L);
+        // [Phase1 cross-domain] Order → Product（校验 SKU 是否仍绑定该箱型）
         List<FolwerSkuVo> folwerSkuVos = folwerSkuService.queryList(bo);
         if (folwerSkuVos.size() > 0){
             return R.ok(folwerSkuVos);
