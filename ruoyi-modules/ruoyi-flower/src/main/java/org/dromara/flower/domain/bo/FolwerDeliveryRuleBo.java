@@ -15,6 +15,7 @@ import jakarta.validation.constraints.*;
  * @author mlhxj
  * @date 2025-03-31
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @AutoMapper(target = FolwerDeliveryRule.class, reverseConvertGenerate = false)

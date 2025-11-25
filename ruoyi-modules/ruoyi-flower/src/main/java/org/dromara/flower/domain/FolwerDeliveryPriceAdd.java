@@ -18,6 +18,7 @@ import java.math.BigDecimal;
  * @author mlhxj
  * @date 2025-09-15
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -3,6 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.dromara.flowerapplet.mapper.FolwerAppletBasketMapper">
+    <!-- MEILI-DOMAIN: Order - 订单领域数据访问映射 -->
 
     <select id="getShopCartItems" resultType="org.dromara.flowerapplet.domain.vo.FolwerAppletBasketVo">
     SELECT fb.basket_id, fb.prod_id, fp.product_name as prodName, fp.product_list_picture_url as prodPic,

@@ -14,6 +14,7 @@ import java.io.Serial;
  * @author mlhxj
  * @date 2025-01-15
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("folwer_order_refund")

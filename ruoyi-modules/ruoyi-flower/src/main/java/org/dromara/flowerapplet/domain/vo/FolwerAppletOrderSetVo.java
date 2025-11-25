@@ -20,6 +20,7 @@ import java.util.Date;
  * @author mlhxj
  * @date 2025-02-28
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerAppletOrderSet.class)

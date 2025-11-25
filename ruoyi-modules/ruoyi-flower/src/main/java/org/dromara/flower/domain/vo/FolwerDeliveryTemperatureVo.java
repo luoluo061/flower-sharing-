@@ -16,6 +16,7 @@ import java.io.Serializable;
  * @author mlhxj
  * @date 2025-09-04
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerDeliveryTemperature.class)

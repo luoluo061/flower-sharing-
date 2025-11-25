@@ -17,6 +17,7 @@ import java.math.BigDecimal;
  * @author mlhxj
  * @date 2025-09-02
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerAppletOrderDvy.class)

@@ -3,6 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.dromara.flower.mapper.FolwerOrderMapper">
+    <!-- MEILI-DOMAIN: Order - 订单领域数据访问映射 -->
 
     <select id="selectOrderInfoVoById" resultType="org.dromara.flower.domain.vo.FolwerOrderInfoVo">
         SELECT fo.order_id, fo.status, fo.actual_total, fo.freight_amount, fo.total, fo.pay_type, fo.pay_time,

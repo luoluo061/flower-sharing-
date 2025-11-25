@@ -16,6 +16,7 @@ import java.io.Serial;
  * @author Lion Li
  * @date 2024-12-25
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("folwer_order")

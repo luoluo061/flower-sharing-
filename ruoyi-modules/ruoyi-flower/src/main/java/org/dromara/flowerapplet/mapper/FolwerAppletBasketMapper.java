@@ -13,6 +13,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-01-02
  */
+// [MEILI-DOMAIN]: Order
 public interface FolwerAppletBasketMapper extends BaseMapperPlus<FolwerAppletBasket, FolwerAppletBasketVo> {
 
     /**

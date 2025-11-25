@@ -13,6 +13,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2024-12-25
  */
+// [MEILI-DOMAIN]: Order
 public interface FolwerOrderRefundMapper extends BaseMapperPlus<FolwerOrderRefund, FolwerOrderRefundVo> {
 
     FolwerOrderRefundInfoVo selectOrderRefundInfoVoById(@Param("orderId") Long orderId);

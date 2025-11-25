@@ -10,6 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2025-09-15
  */
+// [MEILI-DOMAIN]: Order
 public interface FolwerDeliveryPriceMapper extends BaseMapperPlus<FolwerDeliveryPrice, FolwerDeliveryPriceVo> {
 
 }

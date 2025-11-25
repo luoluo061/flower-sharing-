@@ -16,6 +16,7 @@ import jakarta.validation.constraints.*;
  * @author Lion Li
  * @date 2024-12-25
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @AutoMapper(target = FolwerOrderDetail.class, reverseConvertGenerate = false)

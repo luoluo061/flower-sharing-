@@ -18,6 +18,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-09-15
  */
+// [MEILI-DOMAIN]: Order
 @Schema(description = "地区表")
 @Data
 //@EqualsAndHashCode(callSuper = true)

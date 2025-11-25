@@ -8,6 +8,7 @@ import org.dromara.common.core.validate.AddGroup;
 import org.dromara.common.core.validate.EditGroup;
 
 
+// [MEILI-DOMAIN]: Order
 @Data
 
 public class AppOrderConsumeBo {

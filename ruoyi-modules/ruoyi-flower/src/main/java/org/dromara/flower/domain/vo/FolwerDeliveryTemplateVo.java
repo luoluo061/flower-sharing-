@@ -17,6 +17,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-04-02
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerDeliveryTemplate.class)

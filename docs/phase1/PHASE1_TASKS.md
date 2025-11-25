@@ -1,4 +1,3 @@
-<<<<<<< ours
 # Phase 1 整理清单
 
 ## 1. Phase 1 要求摘要
@@ -16,19 +15,15 @@
 > 以上范围来自 `DOMAIN_CLASSIFICATION.md` 与 `DOMAIN_COMPONENT_MAPPING.md` 的 Phase 0 标注；具体 Phase 1 处理顺序需参考缺失的设计总览文档确认。
 
 ## 3. Phase 1 关注的跨领域依赖
-- Order → Member：`src/main/java/org/dromara/flower/service/impl/FolwerOrderServiceImpl.java`（第 18-114 行）依赖会员等级与用户信息服务来补充订单视图。
-- Order → Product：`src/main/java/org/dromara/flower/service/impl/FolwerDeliveryBoxServiceImpl.java`（第 12-158 行）调用商品 SKU 服务校验配送箱型关联。
-- Payment → Order：`src/main/java/org/dromara/flowerapplet/controller/WxPayCallbackController.java`（第 13-43 行）在支付回调中依赖订单服务处理回调逻辑。
+- Order → Member：`src/main/java/org/dromara/flower/service/impl/FolwerOrderServiceImpl.java` 依赖会员等级与用户信息服务来补充订单视图。
+- Order → Product：`src/main/java/org/dromara/flower/service/impl/FolwerDeliveryBoxServiceImpl.java` 调用商品 SKU 服务校验配送箱型关联。
+- Payment → Order：`src/main/java/org/dromara/flowerapplet/controller/WxPayCallbackController.java` 在支付回调中依赖订单服务处理回调逻辑。
 
-## 4. Phase 1 Checklist（待补设计文档后细化）
+## 4. Phase 1 Checklist
 - [ ] 获取并研读 `MEILI-CENTER-DESIGN-OVERVIEW.md` 中的 Phase 1 章节，形成正式需求小结。
 - [ ] 同步 `docs/centers/*.md` 中 Phase 1 分中心要求，补充到本清单。
 - [ ] 根据设计文档指示，明确各中心（如 Order、Payment、Member 等）的处理顺序与范围，并在此文档更新。
 - [ ] 对照领域映射清单，梳理 Phase 1 涉及的 Controller/Service/Domain/Mapper 清单，确保记录完整性。
 - [ ] 针对已标记的跨领域依赖，按设计文档要求确定 Phase 1 需要关注或隔离的项，更新关注点与处理计划。
-=======
-# Phase 1 Tasks
-
-## Phase 1 Checklist
 - [x] 梳理并文档化已知 Order→Member / Order→Product / Payment→Order 的代码级触点（见 CROSS_DOMAIN_TOUCHPOINTS_DETAIL.md，本次任务已完成）
->>>>>>> theirs
+- [x] 完成 Order Center 组件梳理与 MEILI-DOMAIN 注释扩展（见 ORDER_CENTER_COMPONENTS.md，本次任务已完成）

@@ -21,6 +21,11 @@ import org.dromara.flower.service.IFolwerDeliveryPriceService;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 
+// [MEILI-DOMAIN]: Order
+/**
+ * Order 领域服务。
+ * 说明：用于处理订单创建、查询、配送、售后等业务逻辑。
+ */
 /**
  * 物流计费Service业务层处理
  *

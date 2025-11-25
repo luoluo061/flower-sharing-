@@ -14,6 +14,7 @@ import java.math.BigDecimal;
  * @author mlhxj
  * @date 2025-01-07
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @AutoMapper(target = FolwerAppletOrderDetail.class, reverseConvertGenerate = false)

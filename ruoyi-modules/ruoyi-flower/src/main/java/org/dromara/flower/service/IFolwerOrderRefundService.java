@@ -10,6 +10,11 @@ import org.dromara.common.mybatis.core.page.PageQuery;
 import java.util.Collection;
 import java.util.List;
 
+// [MEILI-DOMAIN]: Order
+/**
+ * Order 领域服务。
+ * 说明：用于处理订单创建、查询、配送、售后等业务逻辑。
+ */
 /**
  * 订单退款Service接口
  *

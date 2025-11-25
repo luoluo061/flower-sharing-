@@ -14,6 +14,7 @@ import java.util.Map;
 /**
  * @author lanhai
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @Schema(description = "订单参数")
 public class  OrderParamBo {

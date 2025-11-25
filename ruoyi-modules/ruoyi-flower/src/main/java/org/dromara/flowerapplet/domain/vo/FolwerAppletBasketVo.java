@@ -21,6 +21,7 @@ import java.io.Serializable;
  * @author mlhxj
  * @date 2025-01-06
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerAppletBasket.class)

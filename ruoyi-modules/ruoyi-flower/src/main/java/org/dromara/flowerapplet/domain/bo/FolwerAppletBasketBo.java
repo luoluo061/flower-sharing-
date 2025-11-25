@@ -14,6 +14,7 @@ import java.util.Date;
  * @author mlhxj
  * @date 2025-01-06
  */
+// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @AutoMapper(target = FolwerAppletBasket.class, reverseConvertGenerate = false)

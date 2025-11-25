@@ -26,6 +26,11 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.util.*;
 
+// [MEILI-DOMAIN]: Order
+/**
+ * Order 领域服务。
+ * 说明：用于处理订单创建、查询、配送、售后等业务逻辑。
+ */
 /**
  * 小程序购物车Service业务层处理
  *

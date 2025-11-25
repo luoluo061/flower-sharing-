@@ -3,6 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.dromara.flower.mapper.FolwerOrderRefundMapper">
+    <!-- MEILI-DOMAIN: Order - 订单领域数据访问映射 -->
 
     <select id="selectOrderRefundInfoVoById" resultType="org.dromara.flower.domain.vo.FolwerOrderRefundInfoVo">
         SELECT fof.order_id, fo.status, fo.actual_total, fo.freight_amount, fo.total,fof.refund_amount, fo.pay_type, fo.pay_time,
