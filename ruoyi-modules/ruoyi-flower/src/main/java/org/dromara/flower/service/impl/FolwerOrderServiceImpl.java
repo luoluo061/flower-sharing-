@@ -16,6 +16,7 @@ import org.dromara.flower.domain.bo.FolwerPickAddrBo;
 import org.dromara.flower.domain.vo.FolwerOrderInfoVo;
 import org.dromara.flower.domain.vo.FolwerPickAddrVo;
 import org.dromara.flower.domain.vo.MemberLevelVo;
+import org.dromara.flower.domain.order.assembler.OrderViewAssembler;
 import org.dromara.flower.platform.domain.vo.AppletUserInformationVo;
 import org.dromara.flower.platform.mapper.AppletUserInformationMapper;
 import org.dromara.flower.platform.service.IAppletUserInformationService;
@@ -60,6 +61,8 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
 
     private final IFolwerOrderRefundService folwerOrderRefundService;
 
+    private final OrderViewAssembler orderViewAssembler;
+
     /**
      * 查询订单
      *
@@ -78,19 +81,14 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
     public FolwerOrderVo queryById(Long orderId){
         FolwerOrderVo folwerOrderVo = baseMapper.selectVoById(orderId);
         AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(folwerOrderVo.getUserId());
-        if (appletUserInformationVo != null){
-            folwerOrderVo.setUserName(appletUserInformationVo.getNickName());
-            folwerOrderVo.setUserPhone(appletUserInformationVo.getPhone());
-        }
         FolwerPickAddrBo folwerPickAddrBo = new FolwerPickAddrBo();
         folwerPickAddrBo.setUserId(String.valueOf(folwerOrderVo.getUserId()));
         List<FolwerPickAddrVo> folwerPickAddrVos = folwerPickAddrService.queryList(folwerPickAddrBo);
+        FolwerPickAddrVo folwerPickAddrVo = null;
         if (folwerPickAddrVos != null && folwerPickAddrVos.size() > 0){
-            FolwerPickAddrVo folwerPickAddrVo = folwerPickAddrVos.get(0);
-            folwerOrderVo.setAddr(folwerPickAddrVo.getProvince()+ folwerPickAddrVo.getCity()+ folwerPickAddrVo.getArea()+ folwerPickAddrVo.getAddr());
-            folwerOrderVo.setMobile(folwerPickAddrVo.getMobile());
-            folwerOrderVo.setAddrName(folwerPickAddrVo.getAddrName());
+            folwerPickAddrVo = folwerPickAddrVos.get(0);
         }
+        orderViewAssembler.buildOrderVo(folwerOrderVo, appletUserInformationVo, null, folwerPickAddrVo);
         return folwerOrderVo;
     }
 
@@ -126,26 +124,9 @@ public class FolwerOrderServiceImpl implements IFolwerOrderService {
         Page<FolwerOrderVo> result = baseMapper.selectVoPage(pageQuery.build(), lqw);
         result.getRecords().forEach(folwerOrderVo -> {
             MemberLevelVo memberLevelVo = memberLevelService.queryById(folwerOrderVo.getMemberLevelId());
-            if (memberLevelVo != null) {
-                folwerOrderVo.setMemberLevelName(memberLevelVo.getGradeName());
-            }
             AppletUserInformationVo appletUserInformationVo = appletUserInformationService.queryById(folwerOrderVo.getUserId());
-            if (appletUserInformationVo != null){
-                folwerOrderVo.setUserName(appletUserInformationVo.getNickName());
-            }
-
-//            FolwerPickAddrBo folwerPickAddrBo = new FolwerPickAddrBo();
-//            folwerPickAddrBo.setUserId(String.valueOf(FolwerOrderVo.getUserId()));
-//            List<FolwerPickAddrVo> folwerPickAddrVos = folwerPickAddrService.queryList(folwerPickAddrBo);
-
             FolwerPickAddrVo folwerPickAddrVo = folwerPickAddrService.queryById(folwerOrderVo.getAddrOrderId());
-            if (folwerPickAddrVo != null){
-//                FolwerPickAddrVo folwerPickAddrVo = folwerPickAddrVos.get(0);
-                folwerOrderVo.setAddr(folwerPickAddrVo.getProvince()+ folwerPickAddrVo.getCity()+ folwerPickAddrVo.getArea()+ folwerPickAddrVo.getAddr());
-                folwerOrderVo.setMobile(folwerPickAddrVo.getMobile());
-                folwerOrderVo.setAddrName(folwerPickAddrVo.getAddrName());
-            }
-
+            orderViewAssembler.buildOrderVo(folwerOrderVo, appletUserInformationVo, memberLevelVo, folwerPickAddrVo);
         });
         return TableDataInfo.build(result);
     }

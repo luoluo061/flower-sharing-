@@ -112,3 +112,7 @@
 - Order → Member：订单查询会调用会员信息与等级服务，为订单视图补充昵称、手机号和等级名称。
 - Order → Product：删除配送箱型前调用商品 SKU 服务校验是否仍被绑定，避免删除在用配置。
 - Payment → Order：支付回调由支付中心触发，调用小程序订单服务完成支付确认与订单状态更新。
+
+## 4. 视图装配与辅助组件
+
+- OrderViewAssembler — 订单视图装配器，聚焦订单视图对象与会员/用户/地址等扩展信息的字段映射，位于 `org.dromara.flower.domain.order.assembler`。
