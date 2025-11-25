@@ -14,6 +14,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+// [MEILI-DOMAIN]: Payment
 /**
  * JSAPI支付响应参数
  *

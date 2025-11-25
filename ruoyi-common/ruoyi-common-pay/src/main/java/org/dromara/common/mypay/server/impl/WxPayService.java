@@ -31,6 +31,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// [MEILI-DOMAIN]: Payment
+/**
+ * Payment 领域服务实现。
+ * 说明：对接微信支付 SDK，处理下单、查询、回调确认与退款等支付通道能力。
+ */
 @Slf4j
 @Service
 public class WxPayService implements IPayService {

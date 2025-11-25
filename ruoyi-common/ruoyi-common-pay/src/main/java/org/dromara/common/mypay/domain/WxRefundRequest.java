@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.util.List;
 
+// [MEILI-DOMAIN]: Payment
 @Data
 public class WxRefundRequest {
     private String transactionId;

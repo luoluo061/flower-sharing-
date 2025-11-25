@@ -3,6 +3,11 @@ package org.dromara.common.mypay.server;
 import com.wechat.pay.java.service.profitsharing.model.*;
 import org.dromara.common.mypay.domain.PayProfitsharingParam;
 
+// [MEILI-DOMAIN]: Payment
+/**
+ * Payment 领域服务。
+ * 说明：封装微信分账相关接口，提供接收方管理、分账与账单查询能力。
+ */
 public interface SharingService {
 
 

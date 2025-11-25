@@ -13,6 +13,11 @@ import org.dromara.common.mypay.domain.WxRefundRequest;
 
 import java.io.IOException;
 
+// [MEILI-DOMAIN]: Payment
+/**
+ * Payment 领域服务。
+ * 说明：封装支付下单、订单确认、退款等通道能力，为支付中心提供统一的支付接口。
+ */
 public interface IPayService {
 
 

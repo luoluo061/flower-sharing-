@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
+// [MEILI-DOMAIN]: Payment
 @Schema(description = "支付参数")
 /**
  * 支付参数

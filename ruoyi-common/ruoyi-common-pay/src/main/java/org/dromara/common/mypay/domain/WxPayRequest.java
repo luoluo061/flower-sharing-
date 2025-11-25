@@ -5,6 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
 
+// [MEILI-DOMAIN]: Payment
 /**
  * 微信支付信息
  *

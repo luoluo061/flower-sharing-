@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+// [MEILI-DOMAIN]: Payment
 /**
  * 金额信息
  *

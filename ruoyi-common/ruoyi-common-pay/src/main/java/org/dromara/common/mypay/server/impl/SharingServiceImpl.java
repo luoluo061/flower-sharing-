@@ -14,6 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+// [MEILI-DOMAIN]: Payment
+/**
+ * Payment 领域服务实现。
+ * 说明：承载微信分账接收方维护、分账执行及账单查询等业务能力。
+ */
 @Service
 public class SharingServiceImpl implements SharingService {
     private ProfitsharingService profitsharingService;
