@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证对象 applet_user_auth
  *

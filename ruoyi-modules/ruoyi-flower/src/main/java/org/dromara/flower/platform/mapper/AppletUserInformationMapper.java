@@ -9,6 +9,7 @@ import org.dromara.flower.platform.domain.vo.AppletUserInformationVo;
 
 import java.util.List;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息Mapper接口
  *

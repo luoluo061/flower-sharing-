@@ -10,6 +10,7 @@ import org.dromara.common.translation.constant.TransConstant;
 
 import java.io.Serial;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息对象 applet_user_information
  *

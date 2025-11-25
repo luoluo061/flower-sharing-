@@ -5,6 +5,7 @@ import org.dromara.flower.domain.MemberExchangeRecord;
 import org.dromara.flower.domain.vo.MemberExchangeRecordVo;
 import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--兑换记录Mapper接口
  *

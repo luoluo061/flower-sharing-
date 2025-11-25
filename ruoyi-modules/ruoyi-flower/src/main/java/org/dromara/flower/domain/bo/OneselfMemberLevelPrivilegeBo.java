@@ -11,6 +11,7 @@ import jakarta.validation.constraints.*;
 import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--个人会员权益详情记录业务对象 oneself_member_level_privilege
  *

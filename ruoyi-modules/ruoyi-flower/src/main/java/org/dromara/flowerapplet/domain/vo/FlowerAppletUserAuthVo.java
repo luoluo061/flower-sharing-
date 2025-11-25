@@ -16,6 +16,7 @@ import java.util.Date;
 
 
 
+// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证视图对象 applet_user_auth
  *

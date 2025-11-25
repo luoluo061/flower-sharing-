@@ -12,6 +12,7 @@ import jakarta.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.List;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员等级业务对象 member_level
  *

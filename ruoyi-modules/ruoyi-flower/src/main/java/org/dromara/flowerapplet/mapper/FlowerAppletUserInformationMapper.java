@@ -4,6 +4,7 @@ import org.dromara.flowerapplet.domain.FlowerAppletUserInformation;
 import org.dromara.flowerapplet.domain.vo.FlowerAppletUserInformationVo;
 import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息Mapper接口
  *

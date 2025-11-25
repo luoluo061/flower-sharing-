@@ -9,6 +9,7 @@ import io.github.linpeilie.annotations.AutoMapper;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息业务对象 applet_user_information
  *

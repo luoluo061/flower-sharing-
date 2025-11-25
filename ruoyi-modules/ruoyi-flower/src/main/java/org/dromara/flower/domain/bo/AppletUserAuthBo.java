@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import jakarta.validation.constraints.*;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证业务对象 applet_user_auth
  *

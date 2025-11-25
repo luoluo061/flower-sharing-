@@ -9,6 +9,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
 import java.util.List;
 import java.util.Map;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员等级Mapper接口
  *

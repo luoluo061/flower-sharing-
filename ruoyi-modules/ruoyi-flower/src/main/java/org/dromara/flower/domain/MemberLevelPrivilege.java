@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--会员等级--权益名称对象 member_level_privilege
  *

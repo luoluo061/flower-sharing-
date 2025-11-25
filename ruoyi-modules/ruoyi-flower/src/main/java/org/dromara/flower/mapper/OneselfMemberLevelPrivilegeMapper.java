@@ -4,6 +4,7 @@ import org.dromara.flower.domain.OneselfMemberLevelPrivilege;
 import org.dromara.flower.domain.vo.OneselfMemberLevelPrivilegeVo;
 import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--个人会员权益详情记录Mapper接口
  *

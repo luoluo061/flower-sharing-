@@ -14,6 +14,7 @@ import java.util.Date;
 
 
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--会员等级--权益名称视图对象 member_level_privilege
  *

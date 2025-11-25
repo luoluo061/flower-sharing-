@@ -16,6 +16,7 @@ import java.util.Date;
 
 
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--兑换记录视图对象 member_exchange_record
  *

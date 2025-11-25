@@ -8,6 +8,7 @@ import lombok.EqualsAndHashCode;
 import java.io.Serial;
 import java.util.Date;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员购买记录对象 member_purchase_record
  *

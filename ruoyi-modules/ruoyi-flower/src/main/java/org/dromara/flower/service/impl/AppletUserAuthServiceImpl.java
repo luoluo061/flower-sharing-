@@ -19,6 +19,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Collection;
 
+// [MEILI-DOMAIN]: Member
+/**
+ * Member 领域服务。
+ * 说明：处理会员基础信息、会员等级、权益、积分等相关业务逻辑。
+ */
 /**
  * 小程序用户信息认证Service业务层处理
  *

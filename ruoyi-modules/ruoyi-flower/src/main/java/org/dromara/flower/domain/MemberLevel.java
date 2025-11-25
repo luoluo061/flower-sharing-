@@ -8,6 +8,7 @@ import lombok.EqualsAndHashCode;
 import java.io.Serial;
 import java.math.BigDecimal;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员等级对象 member_level
  *

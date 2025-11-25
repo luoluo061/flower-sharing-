@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.io.Serial;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--个人会员权益详情记录对象 oneself_member_level_privilege
  *

@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import jakarta.validation.constraints.*;
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--积分兑换为金币业务对象 member_points_exchange_gold
  *

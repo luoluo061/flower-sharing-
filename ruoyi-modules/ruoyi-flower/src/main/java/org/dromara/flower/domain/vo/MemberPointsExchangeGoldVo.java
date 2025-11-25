@@ -14,6 +14,7 @@ import java.util.Date;
 
 
 
+// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--积分兑换为金币视图对象 member_points_exchange_gold
  *
