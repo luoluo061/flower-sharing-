@@ -15,7 +15,6 @@ import java.util.Date;
 import java.util.List;
 
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员等级视图对象 member_level
  *
@@ -24,6 +23,7 @@ import java.util.List;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = MemberLevel.class)
 public class MemberLevelVo implements Serializable {
 

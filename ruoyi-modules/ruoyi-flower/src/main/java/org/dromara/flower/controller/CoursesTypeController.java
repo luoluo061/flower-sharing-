@@ -34,7 +34,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/type")
-// [MEILI-DOMAIN]: Edu
+// [MEILI-DOMAIN] Edu
 public class CoursesTypeController extends BaseController {
 
     private final ICoursesTypeService coursesTypeService;

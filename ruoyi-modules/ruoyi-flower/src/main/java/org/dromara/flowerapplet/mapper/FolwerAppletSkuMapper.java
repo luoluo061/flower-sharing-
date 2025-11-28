@@ -16,6 +16,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-01-16
  */
+// [MEILI-DOMAIN] Product
 public interface FolwerAppletSkuMapper extends BaseMapperPlus<FolwerAppletSku, FolwerAppletSkuVo> {
 
     List<FolwerAppletSkuColorVo> selectByColor(FolwerAppletSkuBo bo);

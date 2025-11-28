@@ -16,6 +16,7 @@ import java.io.Serializable;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerCreditProduct.class, reverseConvertGenerate = false)
 public class FolwerCreditProductBo extends BaseEntity implements Serializable{
 

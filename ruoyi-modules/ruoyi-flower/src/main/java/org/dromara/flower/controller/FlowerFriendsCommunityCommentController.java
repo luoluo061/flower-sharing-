@@ -32,7 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/friendsCommunityComment")
-// [MEILI-DOMAIN]: Community
+// [MEILI-DOMAIN] Community
 public class FlowerFriendsCommunityCommentController extends BaseController {
 
     private final IFlowerFriendsCommunityCommentService flowerFriendsCommunityCommentService;

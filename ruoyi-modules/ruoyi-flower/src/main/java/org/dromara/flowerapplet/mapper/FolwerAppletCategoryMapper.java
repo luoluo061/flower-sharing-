@@ -10,6 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author Lion Li
  * @date 2025-01-02
  */
+// [MEILI-DOMAIN] Product
 public interface FolwerAppletCategoryMapper extends BaseMapperPlus<FolwerAppletCategory, FolwerAppletCategoryVo> {
 
 }

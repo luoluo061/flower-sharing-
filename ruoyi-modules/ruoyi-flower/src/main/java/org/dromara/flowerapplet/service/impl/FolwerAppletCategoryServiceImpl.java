@@ -27,6 +27,7 @@ import java.util.stream.Collectors;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Product
 public class FolwerAppletCategoryServiceImpl implements IFolwerAppletCategoryService {
 
     private final FolwerAppletCategoryMapper baseMapper;

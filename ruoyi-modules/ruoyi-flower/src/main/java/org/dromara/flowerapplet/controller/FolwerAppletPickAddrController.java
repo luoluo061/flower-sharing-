@@ -33,6 +33,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/pickAddr")
+// [MEILI-DOMAIN] Order
 public class FolwerAppletPickAddrController extends BaseController {
 
     private final IFolwerAppletPickAddrService folwerAppletPickAddrService;

@@ -16,9 +16,9 @@ import jakarta.validation.constraints.*;
  * @author mlhxj
  * @date 2024-12-25
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerPickAddr.class, reverseConvertGenerate = false)
 public class FolwerPickAddrBo extends BaseEntity {
 

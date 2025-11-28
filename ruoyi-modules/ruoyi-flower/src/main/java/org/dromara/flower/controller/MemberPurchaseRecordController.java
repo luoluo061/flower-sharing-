@@ -32,7 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/purchaseRecord")
-// [MEILI-DOMAIN]: Member
+// [MEILI-DOMAIN] Member
 public class MemberPurchaseRecordController extends BaseController {
 
     private final IMemberPurchaseRecordService memberPurchaseRecordService;

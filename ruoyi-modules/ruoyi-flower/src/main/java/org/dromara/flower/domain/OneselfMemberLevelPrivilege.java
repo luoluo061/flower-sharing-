@@ -9,7 +9,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.io.Serial;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--个人会员权益详情记录对象 oneself_member_level_privilege
  *
@@ -19,6 +18,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("oneself_member_level_privilege")
+// [MEILI-DOMAIN] Member
 public class OneselfMemberLevelPrivilege extends TenantEntity {
 
     @Serial

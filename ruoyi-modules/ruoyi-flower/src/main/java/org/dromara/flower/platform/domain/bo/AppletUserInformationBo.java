@@ -8,7 +8,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.dromara.flower.platform.domain.AppletUserInformation;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息业务对象 applet_user_information
  *
@@ -17,6 +16,7 @@ import org.dromara.flower.platform.domain.AppletUserInformation;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = AppletUserInformation.class, reverseConvertGenerate = false)
 public class AppletUserInformationBo extends BaseEntity {
 

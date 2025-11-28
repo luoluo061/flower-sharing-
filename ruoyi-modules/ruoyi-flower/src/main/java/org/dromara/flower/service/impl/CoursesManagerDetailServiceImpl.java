@@ -27,6 +27,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Edu
 public class CoursesManagerDetailServiceImpl implements ICoursesManagerDetailService {
 
     private final CoursesManagerDetailMapper baseMapper;

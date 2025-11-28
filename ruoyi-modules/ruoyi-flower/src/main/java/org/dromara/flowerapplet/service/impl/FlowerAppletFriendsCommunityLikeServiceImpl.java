@@ -28,6 +28,7 @@ import java.util.Map;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Community
 public class FlowerAppletFriendsCommunityLikeServiceImpl implements IFlowerAppletFriendsCommunityLikeService {
 
     private final FlowerFriendsCommunityLikeMapper baseMapper;

@@ -28,7 +28,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.*;
 import java.util.stream.Collectors;
 
-// [MEILI-DOMAIN]: Member
 /**
  * Member 领域服务。
  * 说明：处理会员基础信息、会员等级、权益、积分等相关业务逻辑。
@@ -42,6 +41,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Service
 @Slf4j
+// [MEILI-DOMAIN] Member
 public class MemberAppletLevelServiceImpl implements IMemberAppletLevelService {
 
     private final MemberLevelMapper baseMapper;

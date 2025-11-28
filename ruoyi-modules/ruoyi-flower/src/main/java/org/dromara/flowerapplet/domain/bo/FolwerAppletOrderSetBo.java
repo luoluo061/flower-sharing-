@@ -13,9 +13,9 @@ import lombok.EqualsAndHashCode;
  * @author mlhxj
  * @date 2025-02-28
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerAppletOrderSet.class, reverseConvertGenerate = false)
 public class FolwerAppletOrderSetBo extends BaseEntity {
 

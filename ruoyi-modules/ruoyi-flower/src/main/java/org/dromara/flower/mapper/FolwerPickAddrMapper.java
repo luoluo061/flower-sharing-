@@ -10,7 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2024-12-25
  */
-// [MEILI-DOMAIN]: Order
+// [MEILI-DOMAIN] Order
 public interface FolwerPickAddrMapper extends BaseMapperPlus<FolwerPickAddr, FolwerPickAddrVo> {
 
 }

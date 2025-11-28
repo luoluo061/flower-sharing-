@@ -45,6 +45,7 @@ import java.util.Objects;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Edu
 public class CoursesAppletPurchaseRecordsServiceImpl implements ICoursesAppletPurchaseRecordsService {
 
     private final CoursesPurchaseRecordsMapper baseMapper;

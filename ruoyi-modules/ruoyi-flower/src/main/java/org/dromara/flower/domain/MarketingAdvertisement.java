@@ -17,6 +17,7 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("marketing_advertisement")
+// [MEILI-DOMAIN] Marketing
 public class MarketingAdvertisement extends TenantEntity {
 
     @Serial

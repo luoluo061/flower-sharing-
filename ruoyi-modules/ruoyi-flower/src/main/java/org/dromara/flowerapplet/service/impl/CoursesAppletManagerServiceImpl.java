@@ -50,6 +50,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Service
 @Slf4j
+// [MEILI-DOMAIN] Edu
 public class CoursesAppletManagerServiceImpl implements ICoursesAppletManagerService {
 
     private final CoursesManagerMapper baseMapper;

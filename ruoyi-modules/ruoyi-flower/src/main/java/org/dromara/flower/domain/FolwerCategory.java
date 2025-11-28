@@ -18,6 +18,7 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("folwer_category")
+// [MEILI-DOMAIN] Product
 public class FolwerCategory extends TenantEntity {
 
     @Serial

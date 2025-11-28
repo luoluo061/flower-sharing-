@@ -32,6 +32,7 @@ import java.util.stream.Collectors;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Edu
 public class CoursesAppletTypeServiceImpl implements ICoursesAppletTypeService {
 
     private final CoursesTypeMapper baseMapper;

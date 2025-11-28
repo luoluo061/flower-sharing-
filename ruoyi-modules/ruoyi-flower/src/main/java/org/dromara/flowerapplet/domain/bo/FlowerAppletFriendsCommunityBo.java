@@ -14,6 +14,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Community
 @AutoMapper(target = FlowerAppletFriendsCommunity.class, reverseConvertGenerate = false)
 public class FlowerAppletFriendsCommunityBo extends BaseEntity {
 

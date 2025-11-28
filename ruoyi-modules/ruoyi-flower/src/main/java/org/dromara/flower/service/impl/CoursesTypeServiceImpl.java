@@ -33,6 +33,7 @@ import java.util.stream.Collectors;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Edu
 public class CoursesTypeServiceImpl implements ICoursesTypeService {
 
     private final CoursesTypeMapper baseMapper;

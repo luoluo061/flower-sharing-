@@ -10,6 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2025-01-17
  */
+// [MEILI-DOMAIN] Marketing
 public interface FolwerAppletCreditGetrecordsMapper extends BaseMapperPlus<FolwerAppletCreditGetrecords, FolwerAppletCreditGetrecordsVo> {
 
 }

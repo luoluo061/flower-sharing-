@@ -27,6 +27,7 @@ import java.util.Map;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerCategory.class)
 public class FolwerCategoryVo implements Serializable {
 

@@ -16,7 +16,6 @@ import java.util.Date;
 
 
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员购买记录视图对象 member_purchase_record
  *
@@ -25,6 +24,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = MemberPurchaseRecord.class)
 public class MemberPurchaseRecordVo implements Serializable {
 

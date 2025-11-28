@@ -10,6 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2025-08-11
  */
+// [MEILI-DOMAIN] Product
 public interface FolwerAppletProductDetailMapper extends BaseMapperPlus<FolwerAppletProductDetail, FolwerAppletProductDetailVo> {
 
 }

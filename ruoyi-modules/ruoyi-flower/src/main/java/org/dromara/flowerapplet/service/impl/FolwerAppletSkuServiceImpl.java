@@ -30,6 +30,7 @@ import java.util.stream.Collectors;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Product
 public class FolwerAppletSkuServiceImpl implements IFolwerAppletSkuService {
 
     private final FolwerAppletSkuMapper baseMapper;

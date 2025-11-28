@@ -46,6 +46,7 @@ import java.util.*;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Product
 public class FolwerSkuServiceImpl implements IFolwerSkuService {
 
     private final FolwerSkuMapper baseMapper;

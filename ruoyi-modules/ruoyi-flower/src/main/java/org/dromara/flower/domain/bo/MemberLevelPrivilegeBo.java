@@ -9,7 +9,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import jakarta.validation.constraints.*;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--会员等级--权益名称业务对象 member_level_privilege
  *
@@ -18,6 +17,7 @@ import jakarta.validation.constraints.*;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = MemberLevelPrivilege.class, reverseConvertGenerate = false)
 public class MemberLevelPrivilegeBo extends BaseEntity {
 

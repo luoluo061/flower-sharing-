@@ -37,7 +37,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/purchaseRecords")
-// [MEILI-DOMAIN]: Edu
+// [MEILI-DOMAIN] Edu
 public class CoursesAppletPurchaseRecordsController extends BaseController {
 
     private final ICoursesAppletPurchaseRecordsService coursesPurchaseRecordsService;

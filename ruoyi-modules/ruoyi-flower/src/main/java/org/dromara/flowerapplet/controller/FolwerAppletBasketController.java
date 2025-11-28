@@ -36,7 +36,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RestController
 @RequestMapping("/flowerapplet/basket")
 @RestControllerAdvice
-// [MEILI-DOMAIN]: Product
+// [MEILI-DOMAIN] Order
 public class FolwerAppletBasketController extends BaseController {
 
     private final IFolwerAppletBasketService folwerBasketService;

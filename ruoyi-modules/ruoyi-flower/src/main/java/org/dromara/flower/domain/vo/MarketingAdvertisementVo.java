@@ -22,6 +22,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = MarketingAdvertisement.class)
 public class MarketingAdvertisementVo implements Serializable {
 

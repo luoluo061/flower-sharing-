@@ -27,6 +27,7 @@ import java.util.Map;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Product
 public class FolwerAppletProductDetailServiceImpl implements IFolwerAppletProductDetailService {
 
     private final FolwerAppletProductDetailMapper baseMapper;

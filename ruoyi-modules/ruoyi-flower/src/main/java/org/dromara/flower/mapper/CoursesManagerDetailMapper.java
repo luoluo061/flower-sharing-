@@ -13,6 +13,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2024-12-27
  */
+// [MEILI-DOMAIN] Edu
 public interface CoursesManagerDetailMapper extends BaseMapperPlus<CoursesManagerDetail, CoursesManagerDetailVo> {
 
     List<CoursesManagerDetailVo> selectVoByCoursesManagerIds(@Param("ids") List<Long> list);

@@ -9,13 +9,13 @@ import org.dromara.flower.platform.domain.vo.AppletUserInformationVo;
 
 import java.util.List;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息Mapper接口
  *
  * @author mlhxj
  * @date 2024-12-25
  */
+// [MEILI-DOMAIN] Member
 public interface AppletUserInformationMapper extends BaseMapperPlus<AppletUserInformation, AppletUserInformationVo> {
 
     String selectMemberLevelByid(@Param("id") Long memberLevelId);

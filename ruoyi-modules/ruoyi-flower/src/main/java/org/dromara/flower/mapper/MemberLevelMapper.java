@@ -9,13 +9,13 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
 import java.util.List;
 import java.util.Map;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员等级Mapper接口
  *
  * @author chzl
  * @date 2024-12-24
  */
+// [MEILI-DOMAIN] Member
 public interface MemberLevelMapper extends BaseMapperPlus<MemberLevel, MemberLevelVo> {
 
     void selectMapByIds(@Param("resultHandler") MapResultHandler resultHandler, @Param("ids") List<Long> ids);

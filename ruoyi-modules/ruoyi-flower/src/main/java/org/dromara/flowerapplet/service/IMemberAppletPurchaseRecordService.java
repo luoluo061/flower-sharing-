@@ -12,7 +12,6 @@ import org.dromara.flowerapplet.domain.PayParam;
 import java.util.Collection;
 import java.util.List;
 
-// [MEILI-DOMAIN]: Member
 /**
  * Member 领域服务。
  * 说明：处理会员基础信息、会员等级、权益、积分等相关业务逻辑。
@@ -23,6 +22,7 @@ import java.util.List;
  * @author chzl
  * @date 2024-12-24
  */
+// [MEILI-DOMAIN] Member
 public interface IMemberAppletPurchaseRecordService {
 
     /**

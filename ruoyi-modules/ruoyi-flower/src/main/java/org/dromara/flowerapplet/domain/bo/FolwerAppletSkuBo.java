@@ -19,6 +19,7 @@ import java.math.BigDecimal;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerAppletSku.class, reverseConvertGenerate = false)
 public class FolwerAppletSkuBo extends BaseEntity {
 

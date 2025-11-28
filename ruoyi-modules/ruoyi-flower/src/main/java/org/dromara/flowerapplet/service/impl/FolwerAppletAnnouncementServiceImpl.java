@@ -27,6 +27,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Product
 public class FolwerAppletAnnouncementServiceImpl implements IFolwerAppletAnnouncementService {
 
     private final FolwerAppletAnnouncementMapper baseMapper;

@@ -20,6 +20,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("marketing_member_promotion_pecord")
+// [MEILI-DOMAIN] Marketing
 public class MarketingMemberPromotionPecord extends TenantEntity {
 
     @Serial

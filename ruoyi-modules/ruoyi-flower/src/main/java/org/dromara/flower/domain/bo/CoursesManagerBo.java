@@ -25,6 +25,7 @@ import java.util.Date;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Edu
 @AutoMapper(target = CoursesManager.class, reverseConvertGenerate = false)
 public class CoursesManagerBo extends BaseEntity {
 

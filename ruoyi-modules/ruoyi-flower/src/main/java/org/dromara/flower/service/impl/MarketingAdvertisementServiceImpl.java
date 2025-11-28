@@ -32,6 +32,7 @@ import java.util.stream.Collectors;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class MarketingAdvertisementServiceImpl implements IMarketingAdvertisementService {
 
     private final MarketingAdvertisementMapper baseMapper;

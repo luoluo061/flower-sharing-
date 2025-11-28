@@ -22,6 +22,7 @@ import java.util.Date;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerCategory.class, reverseConvertGenerate = false)
 public class FolwerCategoryBo extends BaseEntity {
 

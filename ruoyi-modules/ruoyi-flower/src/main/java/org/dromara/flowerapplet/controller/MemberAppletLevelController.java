@@ -34,7 +34,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/level")
-// [MEILI-DOMAIN]: Member
+// [MEILI-DOMAIN] Member
 public class MemberAppletLevelController extends BaseController {
 
     private final IMemberAppletLevelService memberLevelService;

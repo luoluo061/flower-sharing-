@@ -8,7 +8,6 @@ import org.dromara.flower.domain.vo.FolwerPickAddrVo;
 import java.util.Collection;
 import java.util.List;
 
-// [MEILI-DOMAIN]: Order
 /**
  * Order 领域服务。
  * 说明：用于处理订单创建、查询、配送、售后等业务逻辑。
@@ -19,6 +18,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2024-12-25
  */
+// [MEILI-DOMAIN] Order
 public interface IFolwerAppletPickAddrService {
 
     /**

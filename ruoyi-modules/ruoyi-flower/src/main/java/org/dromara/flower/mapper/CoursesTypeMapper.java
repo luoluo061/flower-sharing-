@@ -13,6 +13,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2024-12-27
  */
+// [MEILI-DOMAIN] Edu
 public interface CoursesTypeMapper extends BaseMapperPlus<CoursesType, CoursesTypeVo> {
 
     List<CoursesTypeVo> selectChildList(@Param("ids") List<Long> parentIds);

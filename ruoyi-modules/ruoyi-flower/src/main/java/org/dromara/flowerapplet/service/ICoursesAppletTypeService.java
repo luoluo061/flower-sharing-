@@ -17,6 +17,7 @@ import java.util.Map;
  * @author mlhxj
  * @date 2024-12-27
  */
+// [MEILI-DOMAIN] Edu
 public interface ICoursesAppletTypeService {
 
     /**

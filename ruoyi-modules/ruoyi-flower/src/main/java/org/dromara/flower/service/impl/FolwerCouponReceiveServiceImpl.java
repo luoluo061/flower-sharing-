@@ -31,6 +31,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class FolwerCouponReceiveServiceImpl implements IFolwerCouponReceiveService {
 
     private final FolwerCouponReceiveMapper baseMapper;

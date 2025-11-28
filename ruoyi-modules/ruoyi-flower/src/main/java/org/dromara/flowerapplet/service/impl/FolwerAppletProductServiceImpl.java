@@ -37,6 +37,7 @@ import java.util.stream.Stream;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Product
 public class FolwerAppletProductServiceImpl implements IFolwerAppletProductService {
 
     private final FolwerAppletProductMapper baseMapper;

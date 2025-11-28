@@ -28,7 +28,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-// [MEILI-DOMAIN]: Member
 /**
  * Member 领域服务。
  * 说明：处理会员基础信息、会员等级、权益、积分等相关业务逻辑。
@@ -41,6 +40,7 @@ import java.util.Map;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Member
 public class MemberAppletLevelPrivilegeServiceImpl implements IMemberAppletLevelPrivilegeService {
 
     private final MemberLevelPrivilegeMapper baseMapper;

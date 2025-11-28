@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerProductComm.class, reverseConvertGenerate = false)
 public class FolwerProductCommBo extends BaseEntity {
 

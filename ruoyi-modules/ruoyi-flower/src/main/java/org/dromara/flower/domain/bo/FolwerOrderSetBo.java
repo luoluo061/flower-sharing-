@@ -17,9 +17,9 @@ import java.math.BigDecimal;
  * @author Lion Li
  * @date 2024-12-25
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerOrderSet.class, reverseConvertGenerate = false)
 public class FolwerOrderSetBo extends BaseEntity {
 

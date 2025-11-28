@@ -17,6 +17,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-01-16
  */
+// [MEILI-DOMAIN] Product
 public interface IFolwerAppletSkuService {
 
     /**

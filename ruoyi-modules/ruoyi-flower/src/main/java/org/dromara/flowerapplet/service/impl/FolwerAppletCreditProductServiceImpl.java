@@ -31,6 +31,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class FolwerAppletCreditProductServiceImpl implements IFolwerAppletCreditProductService {
 
     private final FolwerAppletCreditProductMapper baseMapper;

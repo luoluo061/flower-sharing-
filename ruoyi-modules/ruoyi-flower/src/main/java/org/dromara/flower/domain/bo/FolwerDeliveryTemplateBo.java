@@ -12,9 +12,9 @@ import lombok.EqualsAndHashCode;
  * @author mlhxj
  * @date 2025-04-02
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerDeliveryTemplate.class, reverseConvertGenerate = false)
 public class FolwerDeliveryTemplateBo extends BaseEntity {
 

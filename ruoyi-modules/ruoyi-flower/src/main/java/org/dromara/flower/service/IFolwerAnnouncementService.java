@@ -14,6 +14,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-03-31
  */
+// [MEILI-DOMAIN] Product
 public interface IFolwerAnnouncementService {
 
     /**

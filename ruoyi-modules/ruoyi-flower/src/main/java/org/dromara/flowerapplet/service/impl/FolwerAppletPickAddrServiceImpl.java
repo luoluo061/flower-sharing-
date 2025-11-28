@@ -22,7 +22,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-// [MEILI-DOMAIN]: Order
 /**
  * Order 领域服务。
  * 说明：用于处理订单创建、查询、配送、售后等业务逻辑。
@@ -36,6 +35,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 @Service
 @Slf4j
+// [MEILI-DOMAIN] Order
 public class FolwerAppletPickAddrServiceImpl implements IFolwerAppletPickAddrService {
 
     private final FolwerPickAddrMapper baseMapper;

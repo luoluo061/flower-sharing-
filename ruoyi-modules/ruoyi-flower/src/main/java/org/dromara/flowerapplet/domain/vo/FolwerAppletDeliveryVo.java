@@ -16,9 +16,9 @@ import java.io.Serializable;
  * @author mlhxj
  * @date 2025-09-02
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerAppletDelivery.class)
 public class FolwerAppletDeliveryVo implements Serializable {
 

@@ -18,6 +18,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("marketing_coupon_receive")
+// [MEILI-DOMAIN] Marketing
 public class MarketingCouponReceive extends TenantEntity {
 
     @Serial

@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Collection;
 
-// [MEILI-DOMAIN]: Order
 /**
  * Order 领域服务。
  * 说明：用于处理订单创建、查询、配送、售后等业务逻辑。
@@ -32,6 +31,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Order
 public class FolwerDeliveryRuleServiceImpl implements IFolwerDeliveryRuleService {
 
     private final FolwerDeliveryRuleMapper baseMapper;

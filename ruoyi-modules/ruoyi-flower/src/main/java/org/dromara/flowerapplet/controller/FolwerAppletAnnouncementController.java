@@ -33,6 +33,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerapplet/announcement")
+// [MEILI-DOMAIN] Product
 public class FolwerAppletAnnouncementController extends BaseController {
 
     private final IFolwerAppletAnnouncementService folwerAnnouncementService;

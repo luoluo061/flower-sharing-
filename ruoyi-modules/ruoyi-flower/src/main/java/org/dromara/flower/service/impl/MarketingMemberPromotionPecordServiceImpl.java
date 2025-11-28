@@ -33,6 +33,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class MarketingMemberPromotionPecordServiceImpl implements IMarketingMemberPromotionPecordService {
 
     private final MarketingMemberPromotionPecordMapper baseMapper;

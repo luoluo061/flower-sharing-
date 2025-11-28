@@ -27,7 +27,6 @@ import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.util.*;
 
-// [MEILI-DOMAIN]: Member
 /**
  * Member 领域服务。
  * 说明：处理会员基础信息、会员等级、权益、积分等相关业务逻辑。
@@ -40,6 +39,7 @@ import java.util.*;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Member
 public class MemberPurchaseRecordServiceImpl implements IMemberPurchaseRecordService {
 
     private final MemberPurchaseRecordMapper baseMapper;

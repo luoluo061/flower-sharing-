@@ -12,7 +12,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author Lion Li
  * @date 2024-12-25
  */
-// [MEILI-DOMAIN]: Order
+// [MEILI-DOMAIN] Order
 public interface FolwerOrderMapper extends BaseMapperPlus<FolwerOrder, FolwerOrderVo> {
 
      FolwerOrderInfoVo selectOrderInfoVoById(@Param("orderId") Long orderId);

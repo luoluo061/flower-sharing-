@@ -15,9 +15,9 @@ import jakarta.validation.constraints.*;
  * @author mlhxj
  * @date 2025-09-28
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerOrderDvy.class, reverseConvertGenerate = false)
 public class FolwerOrderDvyBo extends BaseEntity {
 

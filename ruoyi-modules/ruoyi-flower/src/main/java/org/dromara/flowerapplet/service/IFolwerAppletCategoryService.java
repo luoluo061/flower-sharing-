@@ -14,6 +14,7 @@ import java.util.List;
  * @author Lion Li
  * @date 2025-01-02
  */
+// [MEILI-DOMAIN] Product
 public interface IFolwerAppletCategoryService {
 
     /**

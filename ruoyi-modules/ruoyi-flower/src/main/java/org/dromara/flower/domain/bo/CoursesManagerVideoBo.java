@@ -18,6 +18,7 @@ import jakarta.validation.constraints.*;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Edu
 @AutoMapper(target = CoursesManagerVideo.class, reverseConvertGenerate = false)
 public class CoursesManagerVideoBo extends BaseEntity {
 

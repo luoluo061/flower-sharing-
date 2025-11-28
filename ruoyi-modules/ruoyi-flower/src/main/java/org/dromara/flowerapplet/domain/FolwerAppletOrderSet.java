@@ -13,10 +13,10 @@ import java.io.Serial;
  * @author mlhxj
  * @date 2025-02-28
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("folwer_order_set")
+// [MEILI-DOMAIN] Order
 public class FolwerAppletOrderSet extends TenantEntity {
 
     @Serial

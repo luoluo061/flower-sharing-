@@ -30,6 +30,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class FolwerCreditGetrecordsServiceImpl implements IFolwerCreditGetrecordsService {
 
     private final FolwerCreditGetrecordsMapper baseMapper;

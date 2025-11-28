@@ -14,6 +14,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2024-12-27
  */
+// [MEILI-DOMAIN] Edu
 public interface CoursesManagerMapper extends BaseMapperPlus<CoursesManager, CoursesManagerVo> {
 
     void selectIdCoursesType(@Param("resultHandler") MapResultHandler<Long, String> resultHandler, @Param("ids")List<Long> ids);

@@ -13,6 +13,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2024-12-31
  */
+// [MEILI-DOMAIN] Community
 public interface FlowerFriendsCommunityCommentMapper extends BaseMapperPlus<FlowerFriendsCommunityComment, FlowerFriendsCommunityCommentVo> {
 
     List<FlowerFriendsCommunityCommentVo> selectVoListByCommunityId(@Param("communityId") Long communityId);

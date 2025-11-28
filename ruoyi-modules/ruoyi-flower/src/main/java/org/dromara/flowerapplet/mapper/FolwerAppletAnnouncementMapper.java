@@ -10,6 +10,7 @@ import org.dromara.flowerapplet.domain.vo.FolwerAppletAnnouncementVo;
  * @author mlhxj
  * @date 2025-03-31
  */
+// [MEILI-DOMAIN] Product
 public interface FolwerAppletAnnouncementMapper extends BaseMapperPlus<FolwerAppletAnnouncement, FolwerAppletAnnouncementVo> {
 
 }

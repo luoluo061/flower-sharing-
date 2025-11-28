@@ -16,6 +16,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("courses_type")
+// [MEILI-DOMAIN] Edu
 public class CoursesType extends TenantEntity {
 
     @Serial

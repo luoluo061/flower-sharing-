@@ -8,7 +8,6 @@ import lombok.EqualsAndHashCode;
 import java.io.Serial;
 import java.util.Date;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员购买记录对象 member_purchase_record
  *
@@ -18,6 +17,7 @@ import java.util.Date;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("member_purchase_record")
+// [MEILI-DOMAIN] Member
 public class MemberPurchaseRecord extends TenantEntity {
 
     @Serial

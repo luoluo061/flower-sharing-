@@ -4,13 +4,13 @@ import org.dromara.flowerapplet.domain.FlowerAppletUserAuth;
 import org.dromara.flowerapplet.domain.vo.FlowerAppletUserAuthVo;
 import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证Mapper接口
  *
  * @author mlhxj
  * @date 2025-03-14
  */
+// [MEILI-DOMAIN] Member
 public interface FlowerAppletUserAuthMapper extends BaseMapperPlus<FlowerAppletUserAuth, FlowerAppletUserAuthVo> {
 
 }

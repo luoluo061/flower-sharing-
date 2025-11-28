@@ -32,7 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/coupon")
-// [MEILI-DOMAIN]: Marketing
+// [MEILI-DOMAIN] Marketing
 public class MarketingCouponController extends BaseController {
 
     private final IMarketingCouponService marketingCouponService;

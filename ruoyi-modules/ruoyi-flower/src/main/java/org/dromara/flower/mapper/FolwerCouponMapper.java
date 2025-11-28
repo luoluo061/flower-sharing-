@@ -10,6 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2025-01-03
  */
+// [MEILI-DOMAIN] Marketing
 public interface FolwerCouponMapper extends BaseMapperPlus<FolwerCoupon, FolwerCouponVo> {
 
 }

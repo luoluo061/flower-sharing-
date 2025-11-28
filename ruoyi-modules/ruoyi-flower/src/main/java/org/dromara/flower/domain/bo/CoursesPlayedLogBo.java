@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Edu
 @AutoMapper(target = CoursesPlayedLog.class, reverseConvertGenerate = false)
 public class CoursesPlayedLogBo extends BaseEntity {
 

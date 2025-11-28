@@ -6,6 +6,7 @@ import org.dromara.flower.domain.FlowerFriendsCommunity;
 import org.dromara.flower.domain.vo.FlowerFriendsCommunityVo;
 
 @Mapper
+// [MEILI-DOMAIN] Community
 public interface FlowerFriendsCommunityMapper
     extends BaseMapperPlus<FlowerFriendsCommunity, FlowerFriendsCommunityVo> {
 }

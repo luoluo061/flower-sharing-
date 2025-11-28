@@ -32,7 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/playedLog")
-// [MEILI-DOMAIN]: Edu
+// [MEILI-DOMAIN] Edu
 public class CoursesPlayedLogController extends BaseController {
 
     private final ICoursesPlayedLogService coursesPlayedLogService;

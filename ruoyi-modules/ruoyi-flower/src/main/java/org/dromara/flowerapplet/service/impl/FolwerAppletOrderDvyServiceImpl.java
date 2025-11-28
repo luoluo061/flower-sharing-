@@ -28,7 +28,6 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
 
-// [MEILI-DOMAIN]: Order
 /**
  * Order 领域服务。
  * 说明：用于处理订单创建、查询、配送、售后等业务逻辑。
@@ -41,6 +40,7 @@ import java.util.*;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Order
 public class FolwerAppletOrderDvyServiceImpl implements IFolwerAppletOrderDvyService {
 
     private final FolwerAppletOrderDvyMapper baseMapper;

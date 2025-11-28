@@ -15,6 +15,7 @@ import java.util.List;
  * @author LL
  * @date 2024-12-31
  */
+// [MEILI-DOMAIN] Product
 public interface FolwerAppletProductMapper extends BaseMapperPlus<FolwerAppletProduct, FolwerAppletProductVo> {
 
     List<FolwerAppletProductColorVo> selectByColor(FolwerAppletProductBo bo);

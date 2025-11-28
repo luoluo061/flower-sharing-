@@ -16,9 +16,9 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-09-02
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerAppletOrderDvy.class, reverseConvertGenerate = false)
 public class FolwerAppletOrderDvyBo extends BaseEntity {
 

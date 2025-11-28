@@ -24,6 +24,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Community
 @AutoMapper(target = FlowerFriendsCommunityLike.class)
 public class FlowerFriendsCommunityLikeVo implements Serializable {
 

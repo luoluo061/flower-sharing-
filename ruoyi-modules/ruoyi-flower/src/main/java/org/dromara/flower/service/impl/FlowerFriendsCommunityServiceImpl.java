@@ -20,6 +20,7 @@ import java.util.List;
 /** 弹窗管理 Service（精简版） */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Community
 public class FlowerFriendsCommunityServiceImpl implements IFlowerFriendsCommunityService {
 
     private final FlowerFriendsCommunityMapper baseMapper;

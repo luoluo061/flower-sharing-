@@ -53,6 +53,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Service
 @Slf4j
+// [MEILI-DOMAIN] Edu
 public class CoursesManagerServiceImpl implements ICoursesManagerService {
 
     private final CoursesManagerMapper baseMapper;

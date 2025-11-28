@@ -35,6 +35,7 @@ import java.util.stream.Stream;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class MarketingMemberPromotionPlanServiceImpl implements IMarketingMemberPromotionPlanService {
 
     private final MarketingMemberPromotionPlanMapper baseMapper;

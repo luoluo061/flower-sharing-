@@ -10,7 +10,6 @@ import org.dromara.common.translation.constant.TransConstant;
 
 import java.io.Serial;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息对象 applet_user_information
  *
@@ -20,6 +19,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("applet_user_information")
+// [MEILI-DOMAIN] Member
 public class FlowerAppletUserInformation extends TenantEntity {
 
     @Serial

@@ -15,10 +15,10 @@ import java.math.BigDecimal;
  * @author mlhxj
  * @date 2025-03-29
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("folwer_delivery_box")
+// [MEILI-DOMAIN] Order
 public class FolwerDeliveryBox extends TenantEntity {
 
     @Serial

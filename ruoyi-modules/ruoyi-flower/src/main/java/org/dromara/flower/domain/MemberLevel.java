@@ -8,7 +8,6 @@ import lombok.EqualsAndHashCode;
 import java.io.Serial;
 import java.math.BigDecimal;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员等级对象 member_level
  *
@@ -18,6 +17,7 @@ import java.math.BigDecimal;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("member_level")
+// [MEILI-DOMAIN] Member
 public class MemberLevel extends TenantEntity {
 
     @Serial

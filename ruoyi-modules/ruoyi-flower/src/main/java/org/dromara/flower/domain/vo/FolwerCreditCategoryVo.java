@@ -19,6 +19,7 @@ import java.util.List;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerCreditCategory.class)
 public class FolwerCreditCategoryVo implements Serializable {
 

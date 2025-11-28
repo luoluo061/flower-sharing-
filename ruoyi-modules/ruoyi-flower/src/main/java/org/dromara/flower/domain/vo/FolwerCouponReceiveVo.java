@@ -18,6 +18,7 @@ import java.io.Serializable;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerCouponReceive.class)
 public class FolwerCouponReceiveVo implements Serializable {
 

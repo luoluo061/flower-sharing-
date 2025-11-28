@@ -14,6 +14,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-01-23
  */
+// [MEILI-DOMAIN] Community
 public interface FlowerFriendsCommunityLikeMapper extends BaseMapperPlus<FlowerFriendsCommunityLike, FlowerFriendsCommunityLikeVo> {
 
     List<Long> selectVoListByIdsAndUserId(@Param("ids") List<Long> ids,@Param("userId") Long userId);

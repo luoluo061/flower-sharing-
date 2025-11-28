@@ -11,7 +11,6 @@ import jakarta.validation.constraints.*;
 import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--个人会员权益详情记录业务对象 oneself_member_level_privilege
  *
@@ -20,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = OneselfMemberLevelPrivilege.class, reverseConvertGenerate = false)
 public class OneselfMemberLevelPrivilegeBo extends BaseEntity {
 

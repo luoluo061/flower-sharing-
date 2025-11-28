@@ -5,13 +5,13 @@ import org.dromara.flower.domain.MemberPurchaseRecord;
 import org.dromara.flower.domain.vo.MemberPurchaseRecordVo;
 import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员购买记录Mapper接口
  *
  * @author chzl
  * @date 2024-12-24
  */
+// [MEILI-DOMAIN] Member
 public interface MemberPurchaseRecordMapper extends BaseMapperPlus<MemberPurchaseRecord, MemberPurchaseRecordVo> {
 
     void updateOtherMemberInfoByUserID(@Param("userId") Long userId, @Param("id") Long id);

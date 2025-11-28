@@ -18,6 +18,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("flower_friends_community_comment")
+// [MEILI-DOMAIN] Community
 public class FlowerFriendsCommunityComment extends TenantEntity {
 
     @Serial

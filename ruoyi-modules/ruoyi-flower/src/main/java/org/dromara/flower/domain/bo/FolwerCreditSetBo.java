@@ -17,6 +17,7 @@ import jakarta.validation.constraints.*;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerCreditSet.class, reverseConvertGenerate = false)
 public class FolwerCreditSetBo extends BaseEntity {
 

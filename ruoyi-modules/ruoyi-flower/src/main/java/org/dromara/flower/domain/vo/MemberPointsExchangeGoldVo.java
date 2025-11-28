@@ -14,7 +14,6 @@ import java.util.Date;
 
 
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--积分兑换为金币视图对象 member_points_exchange_gold
  *
@@ -23,6 +22,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = MemberPointsExchangeGold.class)
 public class MemberPointsExchangeGoldVo implements Serializable {
 

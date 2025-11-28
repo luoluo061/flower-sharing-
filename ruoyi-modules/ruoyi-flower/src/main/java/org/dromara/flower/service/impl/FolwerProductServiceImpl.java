@@ -39,6 +39,7 @@ import java.util.*;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Product
 public class FolwerProductServiceImpl implements IFolwerProductService {
 
     @Resource

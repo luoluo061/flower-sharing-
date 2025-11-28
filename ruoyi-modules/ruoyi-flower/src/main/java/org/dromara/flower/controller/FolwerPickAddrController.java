@@ -32,6 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/pickAddr")
+// [MEILI-DOMAIN] Order
 public class FolwerPickAddrController extends BaseController {
 
     private final IFolwerPickAddrService folwerPickAddrService;

@@ -15,6 +15,7 @@ import org.dromara.flowerapplet.domain.FolwerAppletAnnouncement;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerAppletAnnouncement.class, reverseConvertGenerate = false)
 public class FolwerAppletAnnouncementBo extends BaseEntity {
 

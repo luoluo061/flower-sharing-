@@ -17,6 +17,7 @@ import jakarta.validation.constraints.*;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = MarketingLogisticsExpress.class, reverseConvertGenerate = false)
 public class MarketingLogisticsExpressBo extends BaseEntity {
 

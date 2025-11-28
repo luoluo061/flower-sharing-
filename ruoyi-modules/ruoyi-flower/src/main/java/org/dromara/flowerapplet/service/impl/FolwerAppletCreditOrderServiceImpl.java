@@ -43,6 +43,7 @@ import java.util.*;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class FolwerAppletCreditOrderServiceImpl implements IFolwerAppletCreditOrderService {
 
     @Resource

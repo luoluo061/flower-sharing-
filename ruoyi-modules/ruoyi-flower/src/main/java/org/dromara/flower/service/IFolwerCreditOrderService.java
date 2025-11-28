@@ -15,6 +15,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2024-12-27
  */
+// [MEILI-DOMAIN] Marketing
 public interface IFolwerCreditOrderService {
 
     /**

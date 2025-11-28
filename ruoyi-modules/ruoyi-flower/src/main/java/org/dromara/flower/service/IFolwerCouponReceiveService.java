@@ -14,6 +14,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-01-03
  */
+// [MEILI-DOMAIN] Marketing
 public interface IFolwerCouponReceiveService {
 
     /**

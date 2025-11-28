@@ -24,6 +24,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerAppletCreditGetrecords.class)
 public class FolwerAppletCreditGetrecordsVo implements Serializable {
 

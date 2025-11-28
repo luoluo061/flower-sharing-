@@ -30,6 +30,7 @@ import java.util.Collection;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class MarketingLogisticsExpressServiceImpl implements IMarketingLogisticsExpressService {
 
     private final MarketingLogisticsExpressMapper baseMapper;

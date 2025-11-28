@@ -17,6 +17,7 @@ import jakarta.validation.constraints.*;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerAnnouncement.class, reverseConvertGenerate = false)
 public class FolwerAnnouncementBo extends BaseEntity {
 

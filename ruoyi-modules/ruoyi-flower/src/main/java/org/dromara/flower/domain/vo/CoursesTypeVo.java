@@ -25,6 +25,7 @@ import java.util.List;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Edu
 @AutoMapper(target = CoursesType.class)
 public class CoursesTypeVo implements Serializable {
 

@@ -9,7 +9,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import jakarta.validation.constraints.*;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员购买记录业务对象 member_purchase_record
  *
@@ -18,6 +17,7 @@ import jakarta.validation.constraints.*;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = MemberPurchaseRecord.class, reverseConvertGenerate = false)
 public class MemberPurchaseRecordBo extends BaseEntity {
 

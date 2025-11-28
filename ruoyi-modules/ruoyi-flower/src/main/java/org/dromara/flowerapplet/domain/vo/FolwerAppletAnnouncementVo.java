@@ -21,6 +21,7 @@ import java.io.Serializable;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerAppletAnnouncement.class)
 public class FolwerAppletAnnouncementVo extends BaseEntity implements Serializable  {
 

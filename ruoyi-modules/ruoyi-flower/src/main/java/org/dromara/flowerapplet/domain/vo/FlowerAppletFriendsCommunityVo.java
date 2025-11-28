@@ -20,6 +20,7 @@ import java.io.Serializable;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Community
 @AutoMapper(target = FlowerAppletFriendsCommunity.class)
 public class FlowerAppletFriendsCommunityVo implements Serializable {
 

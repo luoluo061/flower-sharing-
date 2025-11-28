@@ -20,6 +20,7 @@ import java.math.BigDecimal;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("folwer_product")
+// [MEILI-DOMAIN] Product
 public class FolwerAppletProduct extends TenantEntity {
 
     @Serial

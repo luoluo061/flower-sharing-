@@ -14,6 +14,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2024-12-31
  */
+// [MEILI-DOMAIN] Community
 public interface IFlowerFriendsCommunityCommentService {
 
     /**

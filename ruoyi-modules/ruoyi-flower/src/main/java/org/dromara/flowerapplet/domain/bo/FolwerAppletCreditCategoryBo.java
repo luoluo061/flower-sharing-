@@ -15,6 +15,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerAppletCreditCategory.class, reverseConvertGenerate = false)
 public class FolwerAppletCreditCategoryBo extends BaseEntity {
 

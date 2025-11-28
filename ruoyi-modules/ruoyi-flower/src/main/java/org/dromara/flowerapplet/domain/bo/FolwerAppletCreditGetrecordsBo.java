@@ -16,6 +16,7 @@ import java.util.Date;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerAppletCreditGetrecords.class, reverseConvertGenerate = false)
 public class FolwerAppletCreditGetrecordsBo extends BaseEntity {
 

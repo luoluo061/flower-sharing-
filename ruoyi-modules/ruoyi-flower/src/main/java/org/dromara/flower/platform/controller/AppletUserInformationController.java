@@ -35,6 +35,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/system/userInformation")
+// [MEILI-DOMAIN] Member
 public class AppletUserInformationController extends BaseController {
 
     private final IAppletUserInformationService appletUserInformationService;

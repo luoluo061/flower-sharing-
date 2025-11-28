@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = MarketingMemberPromotionPlan.class, reverseConvertGenerate = false)
 public class MarketingMemberPromotionPlanBo extends BaseEntity {
 

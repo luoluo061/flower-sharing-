@@ -24,6 +24,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Edu
 @AutoMapper(target = CoursesPlayedLog.class)
 public class CoursesPlayedLogVo implements Serializable {
 

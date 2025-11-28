@@ -7,7 +7,6 @@ import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 会员中心--积分兑换为金币对象 member_points_exchange_gold
  *
@@ -17,6 +16,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("member_points_exchange_gold")
+// [MEILI-DOMAIN] Member
 public class MemberPointsExchangeGold extends TenantEntity {
 
     @Serial

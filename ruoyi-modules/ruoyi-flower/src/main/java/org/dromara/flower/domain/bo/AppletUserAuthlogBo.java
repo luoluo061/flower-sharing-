@@ -11,7 +11,6 @@ import jakarta.validation.constraints.*;
 import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证记录业务对象 applet_user_authlog
  *
@@ -20,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = AppletUserAuthlog.class, reverseConvertGenerate = false)
 public class AppletUserAuthlogBo extends BaseEntity {
 

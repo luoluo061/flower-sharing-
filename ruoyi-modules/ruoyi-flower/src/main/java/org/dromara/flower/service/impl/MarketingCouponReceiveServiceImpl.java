@@ -44,6 +44,7 @@ import static kotlin.reflect.jvm.internal.impl.builtins.StandardNames.FqNames.li
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class MarketingCouponReceiveServiceImpl implements IMarketingCouponReceiveService {
 
     private final MarketingCouponReceiveMapper baseMapper;

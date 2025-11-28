@@ -17,9 +17,9 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-04-02
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerDeliveryTemplate.class)
 public class FolwerDeliveryTemplateVo implements Serializable {
 

@@ -7,7 +7,6 @@ import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证对象 applet_user_auth
  *
@@ -17,6 +16,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("applet_user_auth")
+// [MEILI-DOMAIN] Member
 public class FlowerAppletUserAuth extends TenantEntity {
 
     @Serial

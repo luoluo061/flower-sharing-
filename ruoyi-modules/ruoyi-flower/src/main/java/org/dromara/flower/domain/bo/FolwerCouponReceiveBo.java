@@ -14,6 +14,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerCouponReceive.class, reverseConvertGenerate = false)
 public class FolwerCouponReceiveBo extends BaseEntity {
 

@@ -33,7 +33,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flowerApplet/friendsCommunityLike")
-// [MEILI-DOMAIN]: Community
+// [MEILI-DOMAIN] Community
 public class FlowerAppletFriendsCommunityLikeController extends BaseController {
 
     private final IFlowerAppletFriendsCommunityLikeService flowerFriendsCommunityLikeService;

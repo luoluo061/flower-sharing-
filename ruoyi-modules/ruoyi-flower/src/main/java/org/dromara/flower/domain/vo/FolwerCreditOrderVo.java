@@ -20,6 +20,7 @@ import java.io.Serializable;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Marketing
 @AutoMapper(target = FolwerCreditOrder.class)
 public class FolwerCreditOrderVo implements Serializable {
 

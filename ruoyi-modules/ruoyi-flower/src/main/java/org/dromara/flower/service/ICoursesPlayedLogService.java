@@ -14,6 +14,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-01-07
  */
+// [MEILI-DOMAIN] Edu
 public interface ICoursesPlayedLogService {
 
     /**

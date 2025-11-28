@@ -14,6 +14,7 @@ import jakarta.validation.constraints.*;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Community
 @AutoMapper(target = FlowerFriendsCommunity.class, reverseConvertGenerate = false)
 public class FlowerFriendsCommunityBo extends BaseEntity {
 

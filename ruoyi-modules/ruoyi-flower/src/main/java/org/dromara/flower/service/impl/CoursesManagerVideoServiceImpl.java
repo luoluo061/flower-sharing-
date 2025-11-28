@@ -30,6 +30,7 @@ import java.util.Objects;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Edu
 public class CoursesManagerVideoServiceImpl implements ICoursesManagerVideoService {
 
     private final CoursesManagerVideoMapper baseMapper;

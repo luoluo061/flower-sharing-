@@ -10,6 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author chy
  * @date 2025-01-08
  */
+// [MEILI-DOMAIN] Marketing
 public interface MarketingCouponMapper extends BaseMapperPlus<MarketingCoupon, MarketingCouponVo> {
 
 }

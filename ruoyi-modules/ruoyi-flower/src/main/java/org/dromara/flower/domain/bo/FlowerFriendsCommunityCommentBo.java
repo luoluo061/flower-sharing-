@@ -19,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Community
 @AutoMapper(target = FlowerFriendsCommunityComment.class, reverseConvertGenerate = false)
 public class FlowerFriendsCommunityCommentBo extends BaseEntity {
 

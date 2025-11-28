@@ -38,6 +38,7 @@ import java.util.stream.Collectors;
  */
 @RequiredArgsConstructor
 @Service
+// [MEILI-DOMAIN] Marketing
 public class MarketingCouponServiceImpl implements IMarketingCouponService {
 
     private final MarketingCouponMapper baseMapper;

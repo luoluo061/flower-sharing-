@@ -10,7 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2025-08-01
  */
-// [MEILI-DOMAIN]: Order
+// [MEILI-DOMAIN] Order
 public interface FolwerDeliverySetMapper extends BaseMapperPlus<FolwerDeliverySet, FolwerDeliverySetVo> {
 
 }

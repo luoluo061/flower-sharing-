@@ -32,6 +32,7 @@ import org.dromara.common.mybatis.core.page.TableDataInfo;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/flower/userAuthlog")
+// [MEILI-DOMAIN] Member
 public class AppletUserAuthlogController extends BaseController {
 
     private final IAppletUserAuthlogService appletUserAuthlogService;

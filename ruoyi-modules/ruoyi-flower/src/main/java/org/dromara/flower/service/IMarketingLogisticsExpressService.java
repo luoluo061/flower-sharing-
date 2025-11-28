@@ -14,6 +14,7 @@ import java.util.List;
  * @author chy
  * @date 2025-01-06
  */
+// [MEILI-DOMAIN] Marketing
 public interface IMarketingLogisticsExpressService {
 
     /**

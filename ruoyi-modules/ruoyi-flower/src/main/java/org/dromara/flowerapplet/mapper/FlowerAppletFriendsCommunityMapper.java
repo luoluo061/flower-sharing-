@@ -10,6 +10,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2025-10-20
  */
+// [MEILI-DOMAIN] Community
 public interface FlowerAppletFriendsCommunityMapper extends BaseMapperPlus<FlowerAppletFriendsCommunity, FlowerAppletFriendsCommunityVo> {
 
 }

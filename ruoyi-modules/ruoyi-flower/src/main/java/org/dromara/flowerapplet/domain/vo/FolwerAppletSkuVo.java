@@ -25,6 +25,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerAppletSku.class)
 public class FolwerAppletSkuVo implements Serializable {
 

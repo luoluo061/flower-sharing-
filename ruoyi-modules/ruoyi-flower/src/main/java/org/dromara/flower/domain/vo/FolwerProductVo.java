@@ -30,6 +30,7 @@ import java.util.List;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Product
 @AutoMapper(target = FolwerProduct.class)
 public class FolwerProductVo implements Serializable {
 

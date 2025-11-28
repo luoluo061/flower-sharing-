@@ -8,7 +8,6 @@ import org.dromara.common.mybatis.core.page.PageQuery;
 import java.util.Collection;
 import java.util.List;
 
-// [MEILI-DOMAIN]: Member
 /**
  * Member 领域服务。
  * 说明：处理会员基础信息、会员等级、权益、积分等相关业务逻辑。
@@ -19,6 +18,7 @@ import java.util.List;
  * @author mlhxj
  * @date 2025-03-14
  */
+// [MEILI-DOMAIN] Member
 public interface IAppletUserAuthService {
 
     /**

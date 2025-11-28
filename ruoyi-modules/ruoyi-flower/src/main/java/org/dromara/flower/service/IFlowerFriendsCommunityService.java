@@ -8,6 +8,7 @@ import org.dromara.flower.domain.vo.FlowerFriendsCommunityVo;
 import java.util.Collection;
 import java.util.List;
 
+// [MEILI-DOMAIN] Community
 public interface IFlowerFriendsCommunityService {
 
     FlowerFriendsCommunityVo queryById(Long id);

@@ -17,9 +17,9 @@ import java.math.BigDecimal;
  * @author mlhxj
  * @date 2025-03-29
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerDeliveryBox.class)
 public class FolwerDeliveryBoxVo implements Serializable {
 

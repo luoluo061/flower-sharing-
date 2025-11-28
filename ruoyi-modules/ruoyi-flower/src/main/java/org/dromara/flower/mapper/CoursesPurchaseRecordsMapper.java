@@ -11,6 +11,7 @@ import org.dromara.common.mybatis.core.mapper.BaseMapperPlus;
  * @author mlhxj
  * @date 2024-12-27
  */
+// [MEILI-DOMAIN] Edu
 public interface CoursesPurchaseRecordsMapper extends BaseMapperPlus<CoursesPurchaseRecords, CoursesPurchaseRecordsVo> {
 
     CoursesPurchaseRecordsVo getPurchaseRecordsByUserIdAndCoursesId(@Param("coursesManagerId") Long id, @Param("userId") Long userId);

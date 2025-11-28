@@ -16,7 +16,6 @@ import java.util.Date;
 
 
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证视图对象 applet_user_auth
  *
@@ -25,6 +24,7 @@ import java.util.Date;
  */
 @Data
 @ExcelIgnoreUnannotated
+// [MEILI-DOMAIN] Member
 @AutoMapper(target = FlowerAppletUserAuth.class)
 public class FlowerAppletUserAuthVo implements Serializable {
 

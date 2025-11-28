@@ -9,7 +9,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.io.Serial;
 
-// [MEILI-DOMAIN]: Member
 /**
  * 小程序用户信息认证记录对象 applet_user_authlog
  *
@@ -19,6 +18,7 @@ import java.io.Serial;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @TableName("applet_user_authlog")
+// [MEILI-DOMAIN] Member
 public class FlowerAppletUserAuthlog extends TenantEntity {
 
     @Serial

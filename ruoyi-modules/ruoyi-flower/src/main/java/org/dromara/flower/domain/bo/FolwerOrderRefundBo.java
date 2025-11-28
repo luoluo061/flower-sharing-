@@ -20,9 +20,9 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  * @author mlhxj
  * @date 2024-12-25
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerOrderRefund.class, reverseConvertGenerate = false)
 public class FolwerOrderRefundBo extends BaseEntity {
 

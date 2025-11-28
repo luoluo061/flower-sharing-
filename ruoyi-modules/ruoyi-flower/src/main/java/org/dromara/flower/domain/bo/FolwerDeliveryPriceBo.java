@@ -17,9 +17,9 @@ import java.math.BigDecimal;
  * @author mlhxj
  * @date 2025-09-15
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @EqualsAndHashCode(callSuper = true)
+// [MEILI-DOMAIN] Order
 @AutoMapper(target = FolwerDeliveryPrice.class, reverseConvertGenerate = false)
 public class FolwerDeliveryPriceBo extends BaseEntity {
 
