@@ -20,10 +20,10 @@ import java.util.List;
  * @author Lion Li
  * @date 2024-12-25
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerOrderRefund.class)
+// [MEILI-DOMAIN] Order
 public class FolwerOrderRefundInfoVo implements Serializable {
 
     @Serial

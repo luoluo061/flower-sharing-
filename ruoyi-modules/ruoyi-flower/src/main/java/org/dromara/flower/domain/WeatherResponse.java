@@ -8,6 +8,7 @@ import java.util.List;
 // 忽略接口中未定义的字段（避免解析失败）
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data // Lombok 注解，自动生成 getter/setter/toString 等
+// [MEILI-DOMAIN] Order
 public class WeatherResponse {
     private Integer status; // 状态码（200=成功）
     private String message; // 提示信息

@@ -18,12 +18,12 @@ import java.math.BigDecimal;
  * @author mlhxj
  * @date 2025-09-15
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 //@EqualsAndHashCode(callSuper = true)
 //@TableName("folwer_delivery_price")
+// [MEILI-DOMAIN] Order
 public class FolwerDeliveryPriceAdd{
 
     @Serial

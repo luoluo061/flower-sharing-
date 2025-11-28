@@ -22,6 +22,7 @@ import java.util.List;
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = MemberLevel.class)
+// [MEILI-DOMAIN] Member
 public class MemberLevelTreeVo implements Serializable {
 
     @Serial

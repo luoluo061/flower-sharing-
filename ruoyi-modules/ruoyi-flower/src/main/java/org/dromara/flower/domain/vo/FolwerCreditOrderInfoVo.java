@@ -22,6 +22,7 @@ import java.util.Date;
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerCreditOrder.class)
+// [MEILI-DOMAIN] Marketing
 public class FolwerCreditOrderInfoVo implements Serializable {
 
     @Serial

@@ -8,6 +8,7 @@ import org.dromara.common.core.validate.EditGroup;
 
 
 @Data
+// [MEILI-DOMAIN] Marketing
 public class AppIsFlowerCouponsBo {
 
     /**

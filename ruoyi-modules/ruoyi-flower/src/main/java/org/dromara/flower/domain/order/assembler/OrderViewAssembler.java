@@ -8,10 +8,10 @@ import org.dromara.flower.platform.domain.vo.AppletUserInformationVo;
 import java.util.List;
 import java.util.Map;
 
-// [MEILI-DOMAIN]: Order
 /**
  * 订单视图装配器：负责将订单基础信息与会员、用户、地址等扩展信息进行视图层字段映射。
  */
+// [MEILI-DOMAIN] Order
 public class OrderViewAssembler {
 
     public FolwerOrderVo buildOrderVo(FolwerOrderVo folwerOrderVo,

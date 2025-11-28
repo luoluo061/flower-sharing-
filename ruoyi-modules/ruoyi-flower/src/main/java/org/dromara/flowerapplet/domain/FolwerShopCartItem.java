@@ -16,6 +16,7 @@ import java.util.List;
  * @author mlhxj
  */
 @Data
+// [MEILI-DOMAIN] Order
 public class FolwerShopCartItem implements Serializable {
 
     /**

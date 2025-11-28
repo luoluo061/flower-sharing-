@@ -22,6 +22,7 @@ import java.io.Serializable;
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerAppletSku.class)
+// [MEILI-DOMAIN] Product
 public class FolwerAppletSkuColorVo implements Serializable {
 
     @Serial

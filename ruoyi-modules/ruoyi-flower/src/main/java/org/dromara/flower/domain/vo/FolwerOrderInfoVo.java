@@ -20,10 +20,10 @@ import java.util.Date;
  * @author Lion Li
  * @date 2024-12-25
  */
-// [MEILI-DOMAIN]: Order
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerOrder.class)
+// [MEILI-DOMAIN] Order
 public class FolwerOrderInfoVo implements Serializable  {
 
     @Serial

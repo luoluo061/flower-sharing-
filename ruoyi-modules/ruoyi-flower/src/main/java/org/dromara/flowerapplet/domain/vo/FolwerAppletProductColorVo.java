@@ -25,6 +25,7 @@ import java.util.List;
 @Data
 @ExcelIgnoreUnannotated
 @AutoMapper(target = FolwerAppletProduct.class)
+// [MEILI-DOMAIN] Product
 public class FolwerAppletProductColorVo implements Serializable {
 
     @Serial

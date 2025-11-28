@@ -6,6 +6,7 @@ import org.dromara.common.core.validate.AddGroup;
 import org.dromara.common.core.validate.EditGroup;
 
 @Data
+// [MEILI-DOMAIN] Marketing
 public class AppCouponRecordBo {
 
     /**
